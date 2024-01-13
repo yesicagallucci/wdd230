@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Pacifico&display=swap');
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: white;
+}
+header{
+    background:#B31B68;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+
+}
+header img{
+    width: 100px;    
+    align-items:center;
+    padding-right: 10px;
+    border-radius: 50%;
+    
+    
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    color:#fff;
+    font-size: 2.5em;  
+    align-items: center;
+    padding-left: 10px; 
+    
+}
+
+
+nav{
+    grid-column: 2/3;
+    background: #91C5CC;
+    text-align: center;
+}
+nav a{
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color:black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+}
+a:hover{
+    background-color: #B31B68;
+    color:#fff;
+}
+
+
+main{
+    grid-column: 2/3;
+    font-family: 'Mulish', sans-serif;
+    width:80%;
+    margin: auto;   
+    
+}
+
+ul{
+    list-style-type: none;
+}
+h3{
+    background: #B31B68;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding-top: 0;
+    margin-top: 0;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #91C5CC;
+    color:#B31B68;
+}
+
+section p{
+    text-align: center;
+}
+.card{
+    border: 1px solid #B31B68;
+    margin: 20px;
+}
+
+footer{
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #91C5CC;
+    font-family: 'Mulish', sans-serif;
+
+}
+#lastModified{
+color:#B31B68;
+}
+
