@@ -13,5 +13,15 @@
         grid-column: 1/3;
        
     }
-
+    footer ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+   footer li{
+    padding: .3rem;
+    font-size: 1.2em;
+   }
+  
 }
