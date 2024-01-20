@@ -91,6 +91,7 @@ footer{
     text-align: center;
     background-color: #91C5CC;
     font-family: 'Mulish', sans-serif;
+    font-weight: bold;
 
 }
 #lastModified{
@@ -98,3 +99,7 @@ color:#5b1036;
 font-weight: bold;
 }
 
+#name{
+    font-family:'Pacifico', cursive;
+    font-size: 1.5em;
+}
