@@ -61,7 +61,7 @@ a:hover{
 
 a:visited{
     font-weight: 800;
-    color: #B31B68;
+    color: #5e0c35;
 }
 
 
@@ -339,16 +339,19 @@ input[id="18"]:checked ~ .thumbnail .thumbnail-item[for="18"]{
 }
 
 footer{
-    background-color: #B31B68;
+    background-color: #a5185f;
     color: #fff;
     text-align: center;
     padding: 1.5rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    
 }
 
 footer .name{
     font-family:'Satisfy', cursive;
     font-size: 1.5em;
+    font-weight: 200;
 }
 
 
