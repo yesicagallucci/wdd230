@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap');
+
+body{
+    background-color: #91C5CC;
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+header{
+    background-color: #B31B68;
+    color:#fff;
+    text-align: center;
+    padding: 1.2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.2em;
+}
+
+header h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+border: 1px solid #B31B68;
+margin: 2rem;
+background-color: #fff;
+}
+
+.card h3{
+    background-color: #B31B68;
+    color:#fff;
+    font-size: 2em;
+    text-align: left;
+    padding: 0.5em;
+    padding-top: 0;
+    margin-top: 0;
+    font-family: 'Satisfy', cursive;  
+    line-height: 2em;
+}
+
+.card p{
+    margin: auto 2rem;
+    font-family: 'Poppins', sans-serif;
+       
+}
+
+.content{
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #B31B68;
+    font-weight: 800;
+    padding: 10px;
+}
+
+a:visited{
+    font-weight: 800;
+    color: #B31B68;
+}
+
+
+/*Banner*/
+.banner{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    
+}
+img{
+    max-width: 100%;
+}
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width:100%;
+    border-radius: 6px;
+    overflow: hidden;
+    
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 3500ms;
+    animation-name: autoplay;
+    animation-duration: 35s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.thumbnail-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(153, 148, 148, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 600ms;
+}
+
+.thumbnail-item:hover{
+    transform: scale(2);
+}
+
+.thumbnail-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.thumbnail-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*rule of thirds card*/
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .thumbnail .thumbnail-item[for="1"]{
+    background: grey;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .thumbnail .thumbnail-item[for="2"]{
+    background: grey;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .thumbnail .thumbnail-item[for="3"]{
+    background: grey;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked ~ .thumbnail .thumbnail-item[for="4"]{
+    background: grey;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked ~ .thumbnail .thumbnail-item[for="5"]{
+    background: grey;
+}
+
+input[id="6"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked ~ .thumbnail .thumbnail-item[for="6"]{
+    background: grey;
+}
+
+/*repetition card*/
+
+input[id="7"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="7"]:checked ~ .thumbnail .thumbnail-item[for="7"]{
+    background: grey;
+}
+
+input[id="8"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="8"]:checked ~ .thumbnail .thumbnail-item[for="8"]{
+    background: grey;
+}
+
+input[id="9"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="9"]:checked ~ .thumbnail .thumbnail-item[for="9"]{
+    background: grey;
+}
+
+input[id="10"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="10"]:checked ~ .thumbnail .thumbnail-item[for="10"]{
+    background: grey;
+}
+
+input[id="11"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="11"]:checked ~ .thumbnail .thumbnail-item[for="11"]{
+    background: grey;
+}
+
+input[id="12"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="12"]:checked ~ .thumbnail .thumbnail-item[for="12"]{
+    background: grey;
+}
+
+/*white space card*/
+
+input[id="13"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="13"]:checked ~ .thumbnail .thumbnail-item[for="13"]{
+    background: grey;
+}
+
+input[id="14"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="14"]:checked ~ .thumbnail .thumbnail-item[for="14"]{
+    background: grey;
+}
+
+input[id="15"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="15"]:checked ~ .thumbnail .thumbnail-item[for="15"]{
+    background: grey;
+}
+
+input[id="16"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="16"]:checked ~ .thumbnail .thumbnail-item[for="16"]{
+    background: grey;
+}
+
+input[id="17"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="17"]:checked ~ .thumbnail .thumbnail-item[for="17"]{
+    background: grey;
+}
+
+input[id="18"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="18"]:checked ~ .thumbnail .thumbnail-item[for="18"]{
+    background: grey;
+}
+
+@keyframes autoplay{
+    16.66%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    33.33%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    50%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    66.65%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    83.31%{
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 5), 0, 0);
+    }
+}
+
+footer{
+    background-color: #B31B68;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .name{
+    font-family:'Satisfy', cursive;
+    font-size: 1.5em;
+}
+
+
+
+
