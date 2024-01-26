@@ -21,10 +21,10 @@ header img{
     align-items:center;
     padding-right: 10px;
     border-radius: 50%;
-    
-    
+       
 }
-h1{
+
+header h1{
     font-family: 'Pacifico', cursive;
     color:#fff;
     font-size: 2.5em;  
@@ -35,6 +35,7 @@ h1{
 
 .picname{
     grid-row: 1/2;
+
 }
 
 /*Hamburger menu*/
@@ -42,6 +43,8 @@ nav {
 	max-width: 700px;
 	margin: 1rem auto;
 }
+
+  
 
 /* small view navigation */
 #menu {
@@ -88,6 +91,14 @@ nav {
 	display: block;
 }
 
+.navigation {
+    display: none;
+  }
+  
+  .navigation.show {
+    display: block;
+  }
+  
 
 
 
@@ -142,3 +153,13 @@ font-weight: bold;
     font-family:'Pacifico', cursive;
     font-size: 1.5em;
 }
+
+iframe{
+    
+}
+.container {
+    grid-column: 2/3;
+    margin: 0 auto;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+  }
+  
