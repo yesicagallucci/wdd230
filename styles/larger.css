@@ -20,8 +20,28 @@
        
     }
    footer li{
-    padding: .3rem;
-    font-size: 1.2em;
-   }
+     padding: .3rem;
+     font-size: 1.2em;
+    }
+
+    .navigation{
+        grid-row: 2/3;
+        background: #91C5CC;
+        text-align: center;
+    }
+    .navigation a{
+        display: block;
+        line-height: 2em;
+        text-decoration: none;
+        color:black;
+        font-family: 'Mulish', sans-serif;
+        font-size: 1.2em;
+    }
+    a:hover{
+        background-color: #B31B68;
+        color:#fff;
+    }
+   
+
   
 }

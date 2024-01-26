@@ -9,6 +9,7 @@ body{
 header{
     background:#B31B68;
     grid-column: 2/3;
+    grid-row: 1/3;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -32,41 +33,62 @@ h1{
     
 }
 
+.picname{
+    grid-row: 1/2;
+}
+
 /*Hamburger menu*/
-#menu{
-    font-size: 1.5rem;
-    padding: 3px 7px 6px;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background-color: #91C5CC;
-    color:#5b1036;
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
 }
-#menu::before{
-    content:"☰"
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	padding: 3px 7px 6px;
+	position: absolute;
+	top:1rem;
+	right:1rem;
 }
+
+
+#menu::before {
+	content: "☰";
+}
+
 #menu.open::before {
 	content: "x";
 }
 
+.navigation {
+    grid-column: 3/4;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
 
-nav{
-    grid-column: 2/3;
-    background: #91C5CC;
-    text-align: center;
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
 }
-nav a{
-    display: block;
-    line-height: 2em;
-    text-decoration: none;
-    color:black;
-    font-family: 'Mulish', sans-serif;
-    font-size: 1.2em;
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
 }
-a:hover{
-    background-color: #B31B68;
-    color:#fff;
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
 }
+
+
 
 
 main{
