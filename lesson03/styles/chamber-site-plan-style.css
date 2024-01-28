@@ -8,7 +8,7 @@ body{
     height: 100vh;
     width: 100%;
     background-image: url(basilica-compressed.jpg);
-    background-color: #3b60a0;
+    background-color: #34568f;
     background-size: cover;
     text-align: center;
     color: white;
@@ -29,7 +29,7 @@ h2{
     font-size: 1.2em;
     font-family: 'Domine', serif;
     color: #fff;
-    background-color:#3b60a0;
+    background-color:#34568f;
     padding: 0.5rem;
 }
 .box{
@@ -41,7 +41,7 @@ h2{
     
 }
 .color1{
-    background-color: #3b60a0;
+    background-color: #34568f;
 }
 .color2{
     background-color: #fff;
@@ -60,7 +60,7 @@ h2{
 }
 
 footer{
-    background-color: #3b60a0;
+    background-color: #34568f;
     color: #fff;
     font-family: 'Domine', serif;
     text-align: center;
