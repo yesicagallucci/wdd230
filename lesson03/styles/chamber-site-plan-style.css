@@ -12,7 +12,7 @@ body{
     background-size: cover;
     text-align: center;
     color: white;
-    font-family: 'Seaweed Script', cursive;
+    
 }
 .hero h1{
     padding-top: 2rem;
@@ -20,8 +20,9 @@ body{
     font-family: 'Domine', serif;
 }
 
-.hero p{
+.hero h2{
     font-size: 1.5em;
+    font-family: 'Seaweed Script', cursive;
 }
 
 h2{
@@ -58,15 +59,33 @@ h2{
     height:auto;
 }
 
+footer{
+    background-color: #3b60a0;
+    color: #fff;
+    font-family: 'Domine', serif;
+    text-align: center;
+    line-height: 1em;
+    width: 100%;
+    padding: 20px;
+    
+}
+#name{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 1.5em;
+}
+
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
            
     }
-    .hero p{
+    .hero h2{
         color: #000;
         background-color: #fff;
     }
 
 }
+
+
+
 
