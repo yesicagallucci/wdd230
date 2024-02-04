@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans&family=Seaweed+Script&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    list-style-type: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+header{
+    grid-column: 1/13;
+}
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #34568f;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #34568f;
+	color: #fff;
+    font-family: 'Domine', serif;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #fff;
+	color: #34568f;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/*Hero*/
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #34568f;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    border: 1px solid #fff;
+    
+}
+.hero h1{
+    padding-top: 2rem;
+    font-size: 3em;
+    font-family: 'Domine', serif;
+}
+/*Sections*/
+.events, .weather, .members{
+    border: 1px solid #34568f;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+section h1{
+    font-family: 'Domine', serif;
+    color: #34568f;
+}
+
+/*CTA*/
+button{
+    display: block;
+    grid-column: 5/7;
+    margin: auto;
+
+}
+
+/*Footer*/
+
+footer{
+    grid-column: 1/13;
+    padding: 2.5rem;
+    margin: 0;
+    list-style: none;
+    background-color: #34568f;
+    color: #fff;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+
