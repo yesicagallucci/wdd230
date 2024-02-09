@@ -14,15 +14,29 @@ body{
     color: white;
     
 }
+.hero img{
+    z-index: 0;
+    width: 100%;
+    height: fit-content;
+
+}
 .hero h1{
+    z-index: 1;
     padding-top: 2rem;
     font-size: 3em;
     font-family: 'Domine', serif;
+    position: absolute;
+    top: 35px;
+    left: 60px;
 }
 
 .hero h2{
+    z-index: 1;
     font-size: 1.5em;
     font-family: 'Seaweed Script', cursive;
+    position: relative;
+    top: px;
+
 }
 
 h2{
