@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans&family=Seaweed+Script&display=swap');
 
-body{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    list-style-type: none;
-}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns:auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    list-style-type: none;
 }
 
 nav {
@@ -18,69 +21,128 @@ nav {
 header{
     grid-column: 1/13;
 }
-/* small view navigation */
+/* Mobile View ***************/
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #34568f;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
 }
 
 #menu::before {
-	content: "☰";
+	content: "≡";
 }
 
-#menu.open::before {
+nav {
+	background-color: #fff;
+    
+}
+.navigation {
+	list-style: none;
+	
+	
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #34568f;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: #34568f;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
 	content: "X";
 }
 
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #34568f;
-	color: #fff;
-    font-family: 'Domine', serif;
-}
-
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #fff;
-	color: #34568f;
-	font-weight: 700;
-}
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
 }
+/*Dark mode toggle switch*/
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
 
 /*Hero*/
+main {
+	
+	margin: 0 auto;
+}
 
 .hero {
-    height: 100vh;
-    width: 100%;
-    background-color: #34568f;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    border: 1px solid #fff;
+	margin: 10px auto;
+    margin-top: 0;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	padding: 1.5rem;
+	
+	
+}
+
+.herolabel h1 {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.8rem;
+	font-family: 'Domine', serif;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #34568f;
     
 }
-.hero h1{
-    padding-top: 2rem;
-    font-size: 3em;
-    font-family: 'Domine', serif;
+
+.herolabel button{
+    padding: 1rem;
+    color:#34568f;
+    background-color: #fff;
+    border:1px solid #34568f;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #fff;
+    font-weight: bold;
+    margin-top: 1rem;
 }
+
+
 /*Sections*/
 .events, .weather, .members{
     border: 1px solid #34568f;
@@ -98,6 +160,16 @@ button{
     display: block;
     grid-column: 5/7;
     margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid #34568f;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    color: #34568f;
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #34568f;
+
 
 }
 
@@ -111,7 +183,7 @@ footer{
     background-color: #34568f;
     color: #fff;
     text-align: center;
-    list-style-type: none;
+    list-style-type: none !important;
     text-decoration: none;
    
 }

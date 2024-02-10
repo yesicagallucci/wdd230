@@ -1,15 +1,38 @@
 @media (min-width:600px){
-    #menu {
-		display: none; /* hide hamburger button */
-	}
-
 	.navigation {
-		flex-direction: row;
+		display: flex;
 	}
-
-	.navigation a {
-		display: block;
+	.navigation li {
+		display: block; /* change state in small view */
 		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+	main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr; 
+            
+    }
+    .events{
+		grid-column: 1/3;
+		grid-row: 1;
+	}
+	.weather{
+		grid-column: 3/4;
+		grid-row: 1;
+	}
+	.members{
+		grid-column: 1/4;
+		grid-row: 2;
+	}
+	.cta{
+		grid-column: 2/3;
+		grid-row: 3;			
 	}
     
 }
