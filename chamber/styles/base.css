@@ -117,8 +117,8 @@ main {
 
 .herolabel {
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 3rem;
+	left: 1rem;
 	padding: 1.5rem;
 	
 	
@@ -130,9 +130,9 @@ main {
 	font-weight: 700;
 	font-size: 1.8rem;
 	font-family: 'Domine', serif;
-    color: #fff;
+    color: #34568f;
     font-weight: bold;
-    text-shadow: 3px 3px 5px #34568f;
+    text-shadow: 3px 3px 5px #fff;
     
 }
 

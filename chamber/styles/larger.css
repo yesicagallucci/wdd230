@@ -13,6 +13,15 @@
 	#menu {
 		display: none;
 	}
+	.herolabel {
+		position: absolute;
+		top: 3.7rem;
+		left: 18rem;
+		padding: 1.5rem;
+		
+		
+	}
+	
 	
 
 }
