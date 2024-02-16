@@ -13,7 +13,7 @@
     <meta property="og:title" content="Yesica Gallucci - WDD230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yesicagallucci.github.io/wdd230/">
-    <meta property="og:image" content=https://yesicagallucci.github.io/wdd230/images/caacupe.jpg>
+    <meta property="og:image" content="https://yesicagallucci.github.io/wdd230/images/caacupe.jpg">
     <meta property="og:url" content="https://yesicagallucci.github.io/wdd230/chamber/index.html">
 
 </head>
@@ -22,6 +22,7 @@
         <a id="menu" href="#" title="hamburgermenu"></a>
         <nav>
             <ul class="navigation">
+                <li><a href="index.html"><img src="images/ccc-logo-01.webp" class="logo" alt="Caacupe chamber of commerce logo" width="80" height="80"></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -32,7 +33,11 @@
             🕶️
         </div>
         <div class="hero">
-            <picture><img src="images/basilica-compressed.jpg" alt="Caacupe Basilica square"></picture>
+            <picture>
+                <source media="(max-width: 825px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 1199px)" srcset="images/wdd230-org-medium.webp">
+                <img src="images/wdd230-org-large.webp" alt="three persons working in an office" width="1607" height="524">
+            </picture>
             <div class="herolabel">
               <h1>Caacupe Chamber of Commerce</h1>
               <button>Become a Member</button>
@@ -51,7 +56,9 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <p>Sunny</p>
+            <p>Temperature</p>
+            <p>Wind Speed</p>
+            <p>Wind Chill</p>
 
         </section>
         <section class="members">

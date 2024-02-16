@@ -66,6 +66,10 @@ nav {
 	background-color: #34568f;
 }
 
+nav ul li{
+	line-height: 4rem;
+}
+
 .show li {
 	display: block;
 }
