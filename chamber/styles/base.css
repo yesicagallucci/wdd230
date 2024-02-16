@@ -160,6 +160,10 @@ section h2{
     color: #34568f;
 }
 
+.windchill button{
+	margin-top: 20px;
+}
+
 /*CTA*/
 button{
     display: block;

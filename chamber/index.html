@@ -56,10 +56,14 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <p>Temperature</p>
-            <p>Wind Speed</p>
-            <p>Wind Chill</p>
+            <div class="windchill">
+                Input the temperature in Fahrenheit:<input type="text" id="temperature"> <br>
+                Input the wind speed in miles per hour <input type="text" id="windspeed"> 
+                <button type="button" onclick="doInputOutput()">Wind Chill</button>
+                <div id="output"></div>
 
+            </div>
+            
         </section>
         <section class="members">
             <h2>Members</h2>
@@ -79,6 +83,7 @@
     </footer>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/lastmod.js"></script> 
-    <script src="scripts/darkmode.js"></script>   
+    <script src="scripts/darkmode.js"></script> 
+    <script src="scripts/windchill.js"></script>  
 </body>
 </html>
