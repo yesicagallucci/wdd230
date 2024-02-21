@@ -1,5 +1,5 @@
 
-const visitDisplay = document.querySelector("#visits");
+const visitsDisplay = document.querySelector("#visits");
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 if (numVisits !== 0){
