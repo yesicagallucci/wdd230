@@ -1,6 +1,6 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('ul');
+const list = document.querySelector('#list');
 
 let chaptersArray = getChapterList() || [];
 chaptersArray.array.forEach(chapter => {
@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
         deleteButton.classList.add('delete');
 		li.append(deleteButton);
 		list.append(li);
-        
+
 		deleteButton.addEventListener('click', function (){
 			list.removeChild(li);
             deleteChapter(li.textContent);
