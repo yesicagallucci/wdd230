@@ -20,10 +20,12 @@ button.addEventListener('click', () => {
     function displayList(item) {
         let li = document.createElementNS('li');
         let deleteButton = document.createElement('button');
-		li.textContent = input.value;
+		li.textContent = item;
 		deleteButton.textContent = 'X';
+        deleteButton.classList.add('delete');
 		li.append(deleteButton);
 		list.append(li);
+        
 		deleteButton.addEventListener('click', function (){
 			list.removeChild(li);
             deleteChapter(li.textContent);
