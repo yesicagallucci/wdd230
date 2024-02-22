@@ -52,9 +52,9 @@ nav {
 }
 
 
-#menu::before {
+/*#menu::before {
 	content: "☰";
-}
+}*/
 
 #menu.open::before {
 	content: "x";
