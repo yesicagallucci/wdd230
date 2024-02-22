@@ -7,7 +7,7 @@
 		flex-direction: row;
 	}
 
-	.navigation a {
+	.navigation li {
 		display: block;
 		flex: 1 1 100%;
 	}
@@ -15,21 +15,14 @@
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
     }
 
-    .hero {
-      position: relative;
-      height: 35rem; 
-      
-  }
-
-  .hero img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      
-  }
+    .hero{
+        grid-column: 1/3;
+        width: 100%;
+        
+    }
 
   .herolabel {
       position: absolute;
@@ -71,7 +64,7 @@
         background: #91C5CC;
         text-align: center;
     }
-    .navigation a{
+    .navigation li{
         display: block;
         line-height: 2em;
         text-decoration: none;
@@ -97,13 +90,9 @@
       
       /* Then style the iframe to fit in the container div with full height and width */
       .responsive-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
+        grid-row: 4;
+       width: 100%;
+       
       }
       
    

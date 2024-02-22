@@ -1,11 +1,11 @@
 
 const visitsDisplay = document.querySelector("#visits");
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let numVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
 
 if (numVisits !== 0){
    visitsDisplay.textContent = numVisits;
 } else{
-   visitsDisplay.textContent = 'This is your first visit';
+   visitsDisplay.textContent = 'This is your first visit. Welcome!';
  
 }
 

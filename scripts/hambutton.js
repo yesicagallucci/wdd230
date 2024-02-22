@@ -5,11 +5,12 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
 function toggleMenuVisibility() {
-	var menu = document.querySelector('.navigation');
+	let menu = document.querySelector('.navigation');
 	menu.classList.toggle('show');
   }
   
-  var menuButton = document.querySelector('#menu');
+  let menuButton = document.querySelector('#menu');
   menuButton.addEventListener('click', toggleMenuVisibility);
   
