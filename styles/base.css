@@ -97,9 +97,6 @@ nav {
 	display: block;
 }
 
-
-
-
 main{
     display: grid;
     height: 100vh;
@@ -179,6 +176,7 @@ footer{
     background-color: #91C5CC;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
+    padding: 1.5rem;
 
 }
 #lastModified{
@@ -193,7 +191,6 @@ font-weight: bold;
 
 
 .container {
-    grid-column: 2/3;
     margin: 0 auto;
     padding-top: 75%; /* 4:3 Aspect Ratio */
     margin-top: 0;
