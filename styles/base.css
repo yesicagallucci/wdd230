@@ -81,10 +81,9 @@ nav {
 	text-decoration: none;
 	color: #5b1036;
 }
-.navigation li a:hover {
-	background-color: #B31B68;
-	color: #fff;
-	font-weight: 700;
+
+.navigation li a:hover{
+    font-weight: bold;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -191,9 +190,13 @@ font-weight: bold;
 }
 
 
-.container {
-    margin: 0 auto;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
-    margin-top: 0;
-  }
   
+.container{
+    display: block;
+    padding-top: 60%;
+    margin: 0 auto;
+
+}
+.responsive-iframe{
+    border: 0;
+}

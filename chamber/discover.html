@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yesica Gallucci - WDD230 - Web Frontend Development - Chamber of commerce site</title>
+    <meta name="author" content="Yesica Gallucci">
+    <meta name="description" content="website for a fictional chamber of commerce in caacupe, created for educational purposes">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Yesica Gallucci - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yesicagallucci.github.io/wdd230/">
+    <meta property="og:image" content="https://yesicagallucci.github.io/wdd230/images/caacupe.jpg">
+    <meta property="og:url" content="https://yesicagallucci.github.io/wdd230/chamber/index.html">
+
+</head>
+<body>
+    <header>
+        <a id="menu" href="#" title="hamburgermenu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html"><img src="images/ccc-logo-01.webp" class="logo" alt="Caacupe chamber of commerce logo" width="80" height="80"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <div id="mode">
+            🕶️
+        </div>
+                
+    </header>
+    <main class="discover-main">
+            <section class="discover-content">
+            <section class="discover-cards">
+                <div class="visits">
+                   <h2>Visits</h2>
+                   <p><span class="label">Welcome!<br></span><span id="visitsDates"></span><br>Total number of visits: <span id="visits"></span></p>
+                </div>
+                <div class="location">
+                   <h2>Location</h2>
+                   <p>Caacupe is located 54 km from the city of Asunción, the capital of Paraguay. It is located on the summit of the homonymous hill, from which you can see the beautiful Ypacaraí Lake. It is a very cozy city surrounded by green valleys and low hills.</p>
+                   <iframe class="responsive-iframe" title="Caacupe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57671.71635440535!2d-57.18848835639169!3d-25.38866246865529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945c32f8a18019d1%3A0xc81a1185bc4fb6fd!2zQ2FhY3Vww6k!5e0!3m2!1ses-419!2spy!4v1706229615994!5m2!1ses-419!2spy" width="400" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="demographic">
+                   <h2>Demographics</h2>
+                   <p>Caacupe has approximately 56,047 inhabitants in total, of which 28,089 are male and 27,141 female, according to projections from the General Directorate of Statistics, Surveys and Censuses in 2017.</p>
+                </div>
+                <div class="culture">
+                   <h2>Culture</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates, asperiores officia nostrum beatae itaque ut amet tempore corrupti rerum inventore illo excepturi tempora debitis odio facere fuga incidunt! Odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sit architecto est, similique eligendi suscipit eveniet molestias. Minus eius numquam impedit beatae reiciendis commodi, eum amet dolores debitis voluptates molestiae.</p>
+                </div>
+              </section>
+        </section>
+        
+        <section class="discover-gallery">
+            <div>
+                <h2>Discover Caacupe</h2>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/ytu-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/ytu-medium.webp">
+                    <img src="images/ytu-large.webp" alt="1344" width="756" height="" loading="lazy">
+                </picture>           
+                <p class="img-caption">Ytu stream</p>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/cerroantena-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/cerroantena-medium.webp">
+                    <img src="images/cerroantena-large.webp" alt="view of anthena hill" width="1210" height="908" loading="lazy">
+                </picture>
+                <p class="img-caption">Cerro Antena, Hill named after the anthena it has installed</p>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/escondido-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/escondido-medium.webp">
+                    <img src="images/escondido-large.webp" alt="view of an artificial lake" width="936" height="527" loading="lazy">
+                </picture>
+                <p class="img-caption">'El Escondido' is an attraction park to enjoy nature in the Caacupe area</p>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/colectivo-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/colectivo-medium.webp">
+                    <img src="images/colectivo-large.webp" alt="bus from public transport from Caacupe" width="1075" height="806" loading="lazy">
+                </picture>
+                <p class="img-caption">Public bus from Caacupe</p>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/interior-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/interior-medium.webp">
+                    <img src="images/interior-large.webp" alt="Altar of the basilica of caacupe" width="870" height="580" loading="lazy">
+                </picture>
+                <p class="img-caption">Altar of the basilica of caacupe</p>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/basiback-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/basiback-medium.webp">
+                    <img src="images/basiback-large.webp" alt="Back view of the Basilica" width="1350" height="1663" loading="lazy">
+                </picture>
+                <p class="img-caption">View of the Basilica from the back street</p>
+            </div>
+         </section>   
+    </main>
+    <footer>
+        <ul>
+            <li>&copy;<span id="year"></span> Caacupe Chamber</li>
+            <li id="name">Yesica Gallucci</li>
+            <li>WDD 230 Project</li>
+        </ul>
+          <p id="lastModified"></p>     
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lastmod.js"></script> 
+    <script src="scripts/darkmode.js"></script> 
+    <script src="scripts/windchill.js"></script> 
+    <script src="scripts/numvisits.js"></script> 
+</body>
+</html>

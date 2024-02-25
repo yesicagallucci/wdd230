@@ -24,9 +24,11 @@
         font-family: 'Mulish', sans-serif;
         font-size: 1.2em;
     }
-    .navigation a:hover{
+    
+    .navigation li a:hover {
         background-color: #B31B68;
-        color:#fff;
+        color: #fff;
+        font-weight: 700;
     }
         
     main {

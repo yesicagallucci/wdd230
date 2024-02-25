@@ -34,5 +34,24 @@
 		grid-column: 2/3;
 		grid-row: 3;			
 	}
-    
+	/*DISCOVER PAGE*/
+	.discover-main{
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-auto-rows: auto 1fr;
+		gap: 0.5rem;		
+	}
+	
+    .discover-cards {
+		grid-column: 1/2;
+		box-sizing: border-box;
+	}
+
+	.discover-gallery div{
+		grid-column: 2/3;
+	}
+	.discover-gallery img:hover{
+		box-shadow: 0px 1px 58px 0px rgba(52,86,143,1);
+
+	}
 }
