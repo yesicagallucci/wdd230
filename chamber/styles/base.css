@@ -201,6 +201,12 @@ footer ul{
 }
 
 /*DISCOVER PAGE*/
+h1{
+	font-family: domine, serif;
+	color: #34568f;
+	text-align: center;
+	display: block;
+}
 
 .discover-main div{
 	border: 1px solid #34568f;
@@ -213,7 +219,7 @@ footer ul{
     width: 100%;
 	overflow: auto;	
 }
-.discover-gallery h1{
+.discover-gallery h2{
 	text-align: center;
 	padding: 0.5rem;
 	margin-bottom: 1rem;
