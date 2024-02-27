@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Pacifico&display=swap');
+body{
+font-family: mulish, sans-serif;
+margin: 0;
+}
+
+p{
+    margin-left: 3rem;
+    line-height: 1.5rem;
+}
+
+h2, h1{
+    font-family: pacifico, cursive;
+    font-size: 2em;
+    margin-left: 2rem;
+}
+img{
+    margin-left: 3rem;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h3, h4{
+    padding: 20px;
+    padding-left: 1rem;
+    margin-left: 2rem;
+}
+
+/*ANIMATIONS*/
+.animation{
+    padding: 20px 5px;
+    background: lightblue;
+    width: 100%;
+}
+
+
+.ball{
+    background: purple;
+    height: 80px;
+    width: 80px;
+    margin: 100px;
+    color: white;
+    border-radius: 100%;
+    animation-name: movement;
+    animation-duration: 10s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes movement {
+    25% {
+        
+        border-radius: 0;
+    }
+    50% {
+        transform: scale(2);         
+    }
+
+    75% {
+        transform:rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(400px);
+        background: red;
+        border-radius:100%;
+    }
+}
+
+/*INTRODUCTION*/
+
+.introduction{
+    background:lightblue;
+    padding: 20px 5px;
+    width: 100%;
+}
+.box0{
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    color: white;  
+    text-align: center;
+    position: relative;
+    animation-name: intro;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count:10;
+}
+
+@keyframes intro{
+    0%{
+        background: purple;
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.5);
+        transform: translateX(400px);
+    }
+
+}
+
+/*DIRECTION*/
+
+.direction{
+    background:lightblue;
+    padding: 20px 5px;
+    width: 100%;
+}
+
+.box2{
+    background: red;
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    color: white;  
+    text-align: center;
+    position: relative;
+    animation-name: direction;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    
+    
+}
+
+@keyframes direction{
+    0% {
+        background: purple;
+             
+    }
+ 
+    100%{
+        left:60%;
+        transform: translateX(80%);
+        
+    }
+
+}
+
+.box2:first-child{
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    
+
+}
+.box2:nth-child(2){
+    animation-iteration-count: 4;
+    animation-direction: reverse;
+
+}
+
+.box2:nth-child(3){
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+
+}
+
+.box2:nth-child(4){
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+
+}
+
+/*ANIMATION FILL MODE*/
+
+.fill{
+    background:lightblue;
+    padding: 20px 5px;
+    width: 100%;
+}
+
+.box3{
+    background: red;
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    color: white;  
+    text-align: center;
+    position: relative;
+    animation-name: fill;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+        
+}
+
+@keyframes fill {
+    100%{
+        transform: translatex(400px);
+        background: purple;
+    }
+}
+.box3:first-child{
+    animation-fill-mode: none;
+}
+.box3:nth-child(2){
+    animation-fill-mode: forwards;
+}
+.box3:nth-child(3){
+    animation-fill-mode: backwards;
+}
+.box3:nth-child(4){
+    animation-fill-mode: both;
+}
+
+
+/*ANIMATION TIMING*/
+
+.timing{
+    background:lightblue;
+    padding: 20px 5px;
+    width: 100%;
+}
+.box{
+    background: red;
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    color: white;    
+    position: relative;
+    animation-name: timing-show ;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    
+}
+
+.box p{
+    padding: 10px;
+}
+
+@keyframes timing-show {
+    0% {
+        background: purple;
+        width: 80px;
+        
+    }
+    50%{
+        width:400px;
+    }
+    100%{
+        transform: translateX(400px);
+        width:80px;
+        
+    }
+}
+
+.box:first-child{
+    animation-timing-function: ease;
+
+}
+.box:nth-child(2){
+    animation-timing-function: ease-in;
+
+}
+.box:nth-child(3){
+    animation-timing-function: ease-out;
+
+}
+.box:nth-child(4){
+    animation-timing-function: ease-in-out;
+
+}
+.box:nth-child(5){
+    animation-timing-function: linear;
+}
+
+.box:nth-child(6){ 
+    animation-timing-function: cubic-bezier(0.49,0.69,0.65,1.3);
+}
+
+
+
+/*examples*/
+.animation-example{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    width: 100%;
+  }
+
+.box1 {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: red;
+    animation: stretch 1.5s ease-out 0s alternate infinite none running;
+  }
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1);
+      background-color: yellow;
+    }
+  }
+
+#container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 100px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+.steam {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: -75px;
+    margin-left: 75px;
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  #steam1 {
+    -webkit-animation: steam1 4s ease-out infinite;
+    animation: steam1 4s ease-out infinite;
+  }
+  
+  #steam3 {
+    -webkit-animation: steam1 4s ease-out 1s infinite;
+    animation: steam1 4s ease-out 1s infinite;
+  }
+  
+  @-webkit-keyframes steam1 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+  }
+  
+  @keyframes steam1 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+  }
+  
+  #steam2 {
+    -webkit-animation: steam2 4s ease-out 0.5s infinite;
+    animation: steam2 4s ease-out 0.5s infinite;
+  }
+  
+  #steam4 {
+    -webkit-animation: steam2 4s ease-out 1.5s infinite;
+    animation: steam2 4s ease-out 1.5s infinite;
+  }
+  
+  @-webkit-keyframes steam2 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+  }
+  
+  @keyframes steam2 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+  }
+  
+  #cup {
+    z-index: 1;
+  }
+  
+  #cup-body {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 0 0 150px 150px;
+    background-color: #fff;
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #cup-shade {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-color: #F3F3F3;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: -3px;
+    transform: rotate(50deg);
+    z-index: 1;
+  }
+  
+  #cup-handle {
+    position: relative;
+    height: 75px;
+    width: 80px;
+    border-radius: 0 150px 150px 0;
+    border: 15px solid #F3F3F3;
+    margin-bottom: 95px;
+    margin-left: 250px;
+    display: inline-block;
+    z-index: 0;
+  }
+  
+  #saucer {
+    position: absolute;
+    height: 30px;
+    width: 300px;  
+    border-radius: 0 0 100px 100px;
+    background-color: #F9F9F9;
+    margin-top: -32px;
+    margin-left: 5px;
+    z-index: 2;
+  }
+  
+  #shadow {
+    height: 10px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 6px;
+    background-color: #7bb8d4;
+  }
+
+

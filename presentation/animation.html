@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/animation.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Animations in CSS</h1>
+    <div class="animation">
+        <div class="ball"></div>        
+    </div>
+    <h2>Introduction</h2>
+    
+    <h3>Keyframes</h3>
+    <p>Keyframes specify values for animating properties at different points. They determine the behavior of one cycle, which may repeat zero or more times. Besides the animation properties you can use transition and transform properties within keyframes.</p>
+    <h4>Template:</h4>
+    <p>@keyframes name {
+        from {
+          porperties;
+        }
+      
+        to {
+          properties;
+        }
+    } <br><br> or <br><br> @keyframes name { 0% { porperties; } 100% { properties; } }</p>
+
+    <h3>Animation-name</h3>
+    <p>For the Keyframes to work you need to add the animation-name property to the element you want to naimate for the keyframe to work, otherwise it won't. You can use any name you want but it has to match the one in the keyframe.</p>
+    <img src="images/animation-name.webp" alt="screenshot of the css file">
+    
+    <h3>Animation-duration</h3>
+    <p>This property defines the duration of the animation cycle. In other words it will determine how long it will take the element to complete the animation. This property is set in seconds or miliseconds<br><br>animation-duration: 10s;</p>
+    
+    <h3>Animation-delay</h3>
+    <p>The animation-delay property specifies when an animation starts, allowing it to begin after it is applied or appear to have started beforehand. It's also set in seconds or miliseconds.<br><br>animation-delay: 1s;</p>
+   
+    <h3>Animation-iteration-count</h3>
+    <p>This property is set with a number, which will be the number of times the animation cycle will run. The value of this porperty will affect the outcome of the animation-direction property, because some direction values need more than one iteration to work.<br><br>animation-iteration-count: 4;</p>
+    <p>This property can also have the value of infinite for a non-stop animation (check the Animation-timing-function below)</p>
+    
+    <div class="introduction">
+        <div class="box0"></div>
+    </div>
+    <img class="intro-img" src="images/intro.webp" alt="screenshot of css code">
+
+
+    <h2>Animation-direction</h2>
+    <p>The property 'animation-direction' determines whether an animation should play in reverse or not. This applies to a single cycle or all cycles. When an animation plays in reverse, the timing functions are also reversed.</p>
+    <p>In the example below normal and reverse values have an even iteration-count while alternate and alternate-reverse have an odd iteration-count. this is to show where they end up once the animation ends. But, to show where they end up I had to set the animation-fill-mode property as well.</p>
+    <p>Normal is the default value.<br>Reverse will play the animation from end to start or from 100% to 0%<br>Alternate and alternate-reverse values require a value above 1 in the iteration-count property to work.<br>Alternate will play one iteration from 0 to 100% and viceversa.<br>Alternate-reverse will play it from 100% to 0% and viceversa.<br><br>animation-direction: normal/reverse/alternate/alternate-reverse;</p>
+    <div class="direction">
+        <div class="box2"><p>Normal</p></div>
+        <div class="box2"><p>Reverse</p></div>
+        <div class="box2"><p>Alternate</p></div>
+        <div class="box2"><p>Alternate-Reverse</p></div>
+        
+    </div>
+
+    <h2>Animation-fill-mode</h2>
+    <p>The animation-fill-mode property determines the behavior of the element before and after an animation is executed.<br><br>animation-fill-mode: none/forwards/backwards/both;</p>
+    <p>none: no effect on the animation<br>forwards:the values applied will be those for the end of the last completed iteration of the animation, instead of the values for the start of the next iteration. This means that the element will stay with the values of the 100% if its direction is not reversed.<br>backwards:The elements will stay using the property values specified in the keyframe that marks the begining of the animation (0% if it's not reversed).<br>both: will apply both forwards and backwards values.</p>
+    <div class="fill">
+        <div class="box3"><p>None</p></div>
+        <div class="box3"><p>Forwards</p></div>
+        <div class="box3"><p>Backwards</p></div>
+        <div class="box3"><p>Both</p></div>
+    </div>
+
+    <h2>Animation-timing-function</h2>
+    <p>This property describes how the animation will progress between each pair of keyframes.</p>
+    <div class="timing">
+        <div class="box"><p>Ease</p></div>
+        <div class="box"><p>Ease-in</p></div>
+        <div class="box"><p>Ease-out</p></div>
+        <div class="box"><p>Ease-in-out</p></div>
+        <div class="box"><p>Linear</p></div>  
+        <div class="box"><p>Cubic-bezier</p></div>        
+    </div>
+    <div class="cubic">
+        <h3>Cubic-bezier</h3>
+        <p>For the last square above I went to <a href="https://cubic-bezier.com/" target="_blank">cubic-bezier.com</a> which is an online generator of code, I played with the dots and copied the code into the CSS file.</p>
+        <img src="images/cubic-bezier-com.webp" alt="screenshot of cubic-bezier.com">
+        <p>If you inspect the page you can see the graph that belongs to each timing function and manipulate the dots and create a diferent outcome and copied it into the CSS file too. </p>
+        <img src="images/cubic-bezier-animation.webp" alt="screenshot of the inspect section of this webpage">
+    </div>
+    
+    <h2>Animation Shorthand Property</h2>
+    <p>All these animation-properties can be state using the following shorthand:<br>animation: name duration timing-function delay iteration-count direction fill-mode play-state<br><br>example: animation:</p>    <p>The values for animation-play-state are pause or running, it's just for pausing the animation, the default is running.</p>
+
+    <h2>Examples</h2>
+    <div class="animation-example">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <p><a href="https://stackoverflow.com/questions/47731107/css-animation-shorthand-property-syntax-order">Source</a></p>
+    
+    <div id="container">
+        <div class="steam" id="steam1"> </div>
+        <div class="steam" id="steam2"> </div>
+        <div class="steam" id="steam3"> </div>
+        <div class="steam" id="steam4"> </div>
+      
+        <div id="cup">
+          <div id="cup-body">
+            <div id="cup-shade"></div>
+          </div>
+          <div id="cup-handle"></div>
+        </div>
+      
+        <div id="saucer"></div>
+      
+        <div id="shadow"></div>
+      </div>
+      <p><a href="https://blog.hubspot.com/website/css-animation-examples" target="_blank">Source</a></p>
+    <p><a href="https://freefrontend.com/css-animation-examples/" target="_blank">This website</a> has a lot of examples of very complicated animations made only using HTML and CSS</p>
+</body>
+</html>
