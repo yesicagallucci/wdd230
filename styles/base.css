@@ -170,6 +170,15 @@ section p{
     margin: 20px;
 }
 
+.space{
+    color: #B31B68;
+    font-weight: bolder;
+}
+
+
+
+/*Footer*/
+
 footer{
     grid-column: 2/3;
     text-align: center;
