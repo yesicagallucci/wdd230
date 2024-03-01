@@ -83,9 +83,14 @@ i {
     border-right: solid 8px darkgreen;
 }
 
+.info {
+    display: block;
+    padding-bottom: 10px; 
+    margin-left: 10px;
+}
 
 footer{
-    margin-top: 6rem;
+    margin-top: 13rem;
 }
 
 .record {
