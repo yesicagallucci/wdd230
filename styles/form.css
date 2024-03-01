@@ -23,7 +23,7 @@ i {
 }
 
 .form fieldset {
-    margin: 2rem o;
+    margin: 2rem 0;
     border: 1.5px solid var(--border);
     padding: 1rem 2%;
 }
