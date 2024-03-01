@@ -40,16 +40,16 @@
                 <fieldset>
                     <legend>Information</legend>
                     <label>Username* <input type="text" id="user" name="Username" required></label>
-                    <label>Password* <i>(Only alpha-numeric and at least 8 characters long.)</i><input type="password" id="pass" name="password" required minlength="8" pattern="[A-Za-z0-9]{8}" title="at least 8 alpha-numeric characters"></label>
-                    <label>Repeat Password* <input type="password" id="rpass" name="password2" required minlength="8" pattern="[A-Za-z0-9]{8}" title="repeat password"></label>
-                    <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address" required placeholder="yourname@byui.edu" pattern="[A-Za-z0-9_.\-]+@byui.edu"></label>
+                    <label>Password* <i>(Only alpha-numeric and at least 8 characters long.)</i><input type="password" id="pass" name="pass" required pattern="[A-Za-z0-9]{8}" title="at least 8 alpha-numeric characters"></label>
+                    <label>Repeat Password* <input type="password" id="rpass" name="rpass" required></label>
+                    <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address" required placeholder="yourname@byui.edu" pattern="[A-Za-z0-9._]+@byui.edu"></label>
                                       
                 </fieldset>
 
                 <fieldset>
                     <legend>Page Rating</legend>
                     <div id="rangevalue"></div>
-                    <label><input type="range" id="range" name="rating" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+                    <label><input type="range" id="range" name="range" min="1" max="10" value="1" step="1" list="rangevalues"></label>
                     <datalist id="rangevalues">
                         <option value="1"></option>
                         <option value="2"></option>
@@ -78,8 +78,8 @@
         </footer>
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hambutton.js"></script>
-        <script src="scripts/passmatch.js"></script>
-        <script src="scripts/emailvalidation.js"></script>
         <script src="scripts/rangevalue.js"></script>
+        <script src="scripts/passmatch.js"></script>
+        
     </body>
 </html>

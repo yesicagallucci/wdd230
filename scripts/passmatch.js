@@ -18,3 +18,4 @@ function checkSame() {
 		pass2.style.color = "#000";
 	}
 }
+
