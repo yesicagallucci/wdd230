@@ -1,5 +1,5 @@
-const pass1 = document.querySelector("#password");
-const pass2 = document.querySelector("#password2");
+const pass1 = document.querySelector("#pass");
+const pass2 = document.querySelector("#rpass");
 const message = document.querySelector("#formmessage");
 
 pass2.addEventListener("focusout", checkSame);

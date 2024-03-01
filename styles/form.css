@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Pacifico&display=swap');
-:root{
+:root {
+    --primary-color:#B31B68;
+    --secondary-color: #91C5CC;
+    --border: #B31B68;
+}
+
+main{
     padding: 0 2%;
     min-height: 20rem;
-    font-family: Mulish, sans-serif;
+    font-family: 'Mulish', sans-serif;
+   
 }
 
 h1{
     font-family: Pacifico, cursive;
     font-size: 2rem;
-    color: #B31B68;
+    color: var(--primary-color);
 }
 
 i {
@@ -17,12 +24,12 @@ i {
 
 .form fieldset {
     margin: 2rem o;
-    border: 1.5px solid #B31B68;
+    border: 1.5px solid var(--border);
     padding: 1rem 2%;
 }
 
 .form legend{
-    color: #B31B68;
+    color: var(--primary-color);
     font-weight: bold;
     padding: .5rem;
 }
@@ -39,7 +46,7 @@ i {
 .form input[type="password"] {
     background-color: #eee;
     display: block;
-    border: 1px solid #B31B68;
+    border: 1px solid var(--border);
     padding: .75rem;
     width: 100%;
     max-width: 400px;
@@ -55,7 +62,7 @@ i {
 
 .form input[type="submit"] {
     border: none;
-    background-color: #91C5CC;
+    background-color: var(--secondary-color);
     color: #5b1036;
     font-weight: bolder;
     border-radius: 6px;
@@ -81,11 +88,7 @@ footer{
 }
 
 .record {
-    border: 1.5px solid #B31B68;
+    border: 1.5px solid var(--border);
     margin: 2rem;
     padding: 2rem;
 }
-
-
-
-
