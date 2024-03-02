@@ -11,9 +11,8 @@ header{
     padding: 20px 0;
     align-items: center;
    
-   
-
 }
+
 header img{
     max-width: 100px;    
     height: auto;
@@ -39,9 +38,6 @@ nav {
     padding: 0;
 }
 
-  
-
-/* small view navigation */
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
@@ -103,6 +99,7 @@ main{
     gap: 0.5rem;
     font-family: 'Mulish', sans-serif;
     margin: 0 auto;   
+    
     
 }
 
