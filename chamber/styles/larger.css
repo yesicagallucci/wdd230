@@ -53,5 +53,9 @@
     .mlevel .level{
 	    grid-column: 2/3;
     }
+	.members {
+		display: flex;
+		flex-direction: row;
+	}
 	
 }

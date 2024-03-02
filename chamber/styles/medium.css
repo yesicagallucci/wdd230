@@ -85,4 +85,11 @@
 		margin-top: 0;
 		
     }
+	.members {
+		display: flex;
+		flex-direction: row;
+	}
+	.join-now {
+		grid-column: 2;
+	}
 }
