@@ -361,3 +361,7 @@ textarea {
 .thankyou p:nth-child(2) {
 	font-weight: bold;
 }
+
+a {
+	text-decoration: none;
+}
