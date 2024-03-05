@@ -1,0 +1,41 @@
+{
+    "wardInformation" : {
+        "familyName" : "Jason" ,
+    "dateOfArrival" : "2023-05-05" ,
+    "numberOfPeopleInTheFamily" : 5 ,
+    "visitedByBishopric" : true ,
+    "familyMembers" : [
+        {
+            "name" : "Jason Jason" ,
+            "gender" : "male" ,
+            "birthdate" : "1971-11-01"
+        },
+        {
+            "name" : "Jane Jason" ,
+            "gender" : "female" ,
+            "birthdate" : "1975-04-30"
+        },
+        {
+            "name" : "Sandy Jason" ,
+            "gender" : "female" ,
+            "birthdate" : "1996-01-02"
+        },
+        {
+            "name" : "Damian Jason" ,
+            "gender" : "male" ,
+            "birthdate" : "1998-10-17"
+        },
+        {
+            "name" : "Cecily Jason" ,
+            "gender" : "female" ,
+            "birthdate" : "2000-05-02"
+        }
+
+
+    ]
+
+    }
+    
+
+
+}
