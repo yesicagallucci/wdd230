@@ -13,24 +13,20 @@ const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         
         let lesson = document.createElement('li');
-        let description = week.links.map(link => {
-            return `<a href="${link.url}">${link.title}</a>`;
-        }).join(' | ');
-        lesson.innerHTML = description;
-        
+        let description = document.createElement('a');
 
         
-        /*week.textContent = `${week.lesson}`;
-        description.textContent = `${lesson.url} ${lesson.title}`;*/
+        week.textContent = `${week.lesson}`;
+        description.textContent = `${lesson.url} ${lesson.title}`;
         
       
         lesson.appendChild(description);
 
-        //content.appendChild(lesson);
+        content.appendChild(lesson);
         
         
     });
-}
+};
 
 getLinks();
 
