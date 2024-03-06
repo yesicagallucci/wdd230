@@ -1,11 +1,12 @@
 const baseURL = "https://yesicagallucci.github.io/wdd230/";
 const linksURL = "https://yesicagallucci.github.io/wdd230/data/links.json";
-const lessons = document.querySelector('#json');
+const content = document.querySelector('#json');
 
 async function getLinks(){
     const response = await fetch(linksURL);
     const data = await response.json();
     //console.log(data);
+
     displayLinks(data.lessons);
 }
 const displayLinks = (weeks) => {
@@ -15,13 +16,13 @@ const displayLinks = (weeks) => {
         let description = document.createElement('a');
 
         
-        week.textContent = `${lesson.lesson}`;
+        week.textContent = `${week.lesson}`;
         description.textContent = `${lesson.url} ${lesson.title}`;
         
       
         lesson.appendChild(description);
 
-        lessons.appendChild(lesson);
+        content.appendChild(lesson);
         
         
     });
