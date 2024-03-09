@@ -15,7 +15,7 @@ Inside the function, use a forEach loop with the array parameter to process each
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         // Create elements to add to the div.cards element
-        let card = document.createElement('section')
+        let card = document.createElement('section');
         let fullName = document.createElement('h2');
         let portrait = document.createElement('img');
         let birthDate = document.createElement('p');
