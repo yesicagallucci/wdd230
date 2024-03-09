@@ -1,81 +1,70 @@
 {
     "companies": [
       {
-        "name": "Soluciones Agropecuarias Caacupé",
-        "address": "Calle San Blas 123, Caacupé, Paraguay",
+        "name": "Los mellis",
+        "address": "Calle San Blas 123, Caacupe, Paraguay",
         "phone": "+595 123 456789",
-        "website": "http://www.solucionesagropecuarias.com.py",
-        "image": "soluciones_agropecuarias_logo.png",
-        "membership_level": "Bronze",
-        "description": "Soluciones Agropecuarias Caacupé is a leading provider of agricultural solutions in the region, offering a wide range of products and services to farmers and agribusinesses. With a focus on innovation and sustainability, we strive to enhance productivity and profitability in the agricultural sector."
+        "website": "http://www.losmellis.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/mellis.webp",
+        "membership_level": "Bronze"
+        
       },
       {
-        "name": "Tecnología Innovadora S.A.",
-        "address": "Avenida Mariscal López 456, Caacupé, Paraguay",
-        "phone": "+595 987 654321",
-        "website": "http://www.tecnologiainnovadora.com.py",
-        "image": "tecnologia_innovadora_logo.png",
-        "membership_level": "Gold",
-        "description": "Tecnología Innovadora S.A. is a pioneering technology company specializing in IT solutions, software development, and digital transformation services. With a commitment to delivering cutting-edge solutions tailored to our clients' needs, we help businesses thrive in the digital age."
-      },
-      {
-        "name": "Carnicería La Estancia",
-        "address": "Calle Estrella 789, Caacupé, Paraguay",
+        "name": "Superseis",
+        "address": "Calle Estrella 789, Caacupe, Paraguay",
         "phone": "+595 567 890123",
-        "website": "http://www.carniceria-laestancia.com.py",
-        "image": "carneceria_laestancia_logo.png",
-        "membership_level": "Silver",
-        "description": "Carnicería La Estancia is a trusted provider of high-quality meat products sourced from local farms. With a focus on freshness and flavor, we offer a wide selection of cuts to satisfy the needs of our customers, including restaurants, hotels, and households."
+        "website": "https://www.superseis.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/superseis.webp",
+        "membership_level": "Gold"
       },
       {
-        "name": "Construcciones Paraguay S.A.",
-        "address": "Avenida San José 321, Caacupé, Paraguay",
+        "name": "El Escondido Caacupe.",
+        "address": "Avenida San José 321, Caacupe, Paraguay",
         "phone": "+595 234 567890",
-        "website": "http://www.construccionesparaguay.com.py",
-        "image": "construcciones_paraguay_logo.png",
-        "membership_level": "Silver",
-        "description": "Construcciones Paraguay S.A. is a leading construction company specializing in residential, commercial, and industrial projects. With a team of experienced professionals and a commitment to quality and excellence, we deliver innovative solutions that exceed client expectations."
+        "website": "http://www.elescondido.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/escondido.webp",
+        "membership_level": "Silver"
+        
       },
       {
-        "name": "Consultora Financiera Caacupé",
-        "address": "Calle Libertad 456, Caacupé, Paraguay",
+        "name": "Eco Moda",
+        "address": "Calle Libertad 456, Caacupe, Paraguay",
         "phone": "+595 345 678901",
-        "website": "http://www.consultorafinanciera.com.py",
-        "image": "consultora_financiera_logo.png",
-        "membership_level": "Gold",
-        "description": "Consultora Financiera Caacupé provides comprehensive financial advisory services to individuals and businesses, including investment management, financial planning, and risk assessment. Our team of experts is dedicated to helping clients achieve their financial goals and secure their future."
+        "website": "http://www.ecomoda.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/ecomoda.webp",
+        "membership_level": "Gold"
+        
       },
       {
-        "name": "Ingeniería Ambiental EcoVida",
-        "address": "Avenida Mariscal Estigarribia 789, Caacupé, Paraguay",
+        "name": "Celta",
+        "address": "Avenida Mariscal Estigarribia 789, Caacupe, Paraguay",
         "phone": "+595 678 901234",
-        "website": "http://www.ecovida-ingenieriaambiental.com.py",
-        "image": "ingenieria_ambiental_ecovida_logo.png",
-        "membership_level": "Silver",
-        "description": "Ingeniería Ambiental EcoVida specializes in environmental engineering solutions aimed at promoting sustainable development and protecting natural resources. From waste management to pollution control, we offer innovative solutions to address environmental challenges."
-      },
-      {
-        "name": "Turismo Aventura Paraguay",
-        "address": "Calle Loma Linda 123, Caacupé, Paraguay",
-        "phone": "+595 789 012345",
-        "website": "http://www.turismoaventura.com.py",
-        "image": "turismo_aventura_paraguay_logo.png",
-        "membership_level": "Bronze",
-        "description": "Turismo Aventura Paraguay offers thrilling adventure tours and outdoor experiences for adventurers seeking excitement in the heart of nature. From hiking and rafting to zip-lining and camping, we provide unforgettable experiences that showcase the beauty and diversity of Paraguay's landscapes."
+        "website": "http://www.celta.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/celta.webp",
+        "membership_level": "Silver"
       },
       {
         "name": "La casa de las empanadas",
-        "address": "O'Leary 3355, Caacupé, Paraguay",
+        "address": "O'Leary 3355, Caacupe, Paraguay",
         "website":"http://lacasadelasempanadas.com.py",
-        "image":"https://yesicagallucci.github.io/wdd230/chamber/images/empanadas.webp"
+        "image":"https://yesicagallucci.github.io/wdd230/chamber/images/empanadas.webp",
+        "membership_level": "Bronze"
       },
       {
         "name":"Green Thumb Nursery",
-        "image":"https://yesicagallucci.github.io/wdd230/chamber/images/green.webp"
+        "address": "Calle Loma Linda 123, Caacupe, Paraguay",
+        "phone": "+595 789 012345",
+        "image":"https://yesicagallucci.github.io/wdd230/chamber/images/green.webp",
+        "membership_level": "Bronze"
       },
       {
         "name":"Tech Innovations",
-        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/tech.webp"
+        "address": "Avenida Mariscal López 456, Caacupe, Paraguay",
+        "phone": "+595 987 654321",
+        "website": "http://www.tecnologiainnovadora.com.py",
+        "image": "https://yesicagallucci.github.io/wdd230/chamber/images/tech.webp",
+        "membership_level": "Gold"
+        
       }
     ]
   }
