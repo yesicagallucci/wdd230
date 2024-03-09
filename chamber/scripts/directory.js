@@ -23,13 +23,14 @@ const displayMembers = (companies) => {
         let url = document.createElement('a');
 
         //connect the content of the json file to each html element above
+        card.setAttribute('class', 'member');
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `logo of ${company.name}`);
         logo.setAttribute('class', 'member-logo');
         brand.textContent = `${company.name}`;
         list.setAttribute('class', 'info');
-        listItem1.textContent = `Address: ${company.address}`;
-        listItem2.textContent = `Phone number: ${company.phone}`;
+        listItem1.textContent = `${company.address}`;
+        listItem2.textContent = `${company.phone}`;
         listItem3.textContent = `Membership level: ${company.membership_level}`;
         url.textContent = 'Website';
         url.setAttribute('href', company.website);
