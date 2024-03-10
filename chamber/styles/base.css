@@ -438,10 +438,11 @@ a {
 
 .menu2 button {
 	padding: 1rem;
-	background-color: var(--primary-color);
-	color: var(--secondary-color);
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 	font-weight: bold;
 	border-radius: 0;
+	border: 1px solid var(--primary-color);
 }
 
 .member ul {
@@ -510,9 +511,14 @@ a {
 	height: 100px;
 	max-width: 100%;
 	padding-bottom: 1rem;
+	transform: scale(0.7);
 }
 
 .member h3{
 	font-family: var(--font-family);
 	color: var(--primary-color);
+}
+
+.member ul img {
+	
 }

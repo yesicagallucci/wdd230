@@ -27,6 +27,7 @@ const displayMembers = (companies) => {
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `logo of ${company.name}`);
         logo.setAttribute('class', 'member-logo');
+        logo.setAttribute('loading', 'lazy');
         brand.textContent = `${company.name}`;
         list.setAttribute('class', 'info');
         listItem1.textContent = `${company.address}`;
