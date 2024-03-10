@@ -2,7 +2,7 @@
     "companies": [
       {
         "name": "Los Mellis",
-        "address": "Calle San Blas 123, Caacupe, Paraguay",
+        "address": "San Blas st 123, Caacupe, Paraguay",
         "phone": "+595 123 456789",
         "website": "http://www.losmellis.com.py",
         "image": "https://yesicagallucci.github.io/wdd230/chamber/images/mellis.webp",
@@ -46,6 +46,7 @@
       {
         "name": "La casa de las empanadas",
         "address": "O'Leary st 3355, Caacupe, Paraguay",
+        "phone": "+595 678 123456",
         "website":"http://lacasadelasempanadas.com.py",
         "image":"https://yesicagallucci.github.io/wdd230/chamber/images/empanadas.webp",
         "membership_level": "Bronze"

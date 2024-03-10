@@ -22,7 +22,7 @@ function showList() {
 document.addEventListener("DOMContentLoaded", function() {
     const gridButton = document.querySelector("#grid");
     const listButton = document.querySelector("#list");
-    const display = document.querySelector("article");
+    const display = document.querySelector("#members");
 
     function showGrid() {
       display.classList.add("grid");
