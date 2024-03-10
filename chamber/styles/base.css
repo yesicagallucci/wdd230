@@ -419,6 +419,19 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.intheoven {
+	font-size: 2em;
+	color: var(--primary-color);
+	font-family: var(--font-family);
+	text-align: center;
+	padding-bottom: .5rem;
+}
+
+#grid, #list {
+	display: inline-block;
+	margin-inline: .5rem;
+}
+
 .menu2 {
 	text-align: center;
 }
