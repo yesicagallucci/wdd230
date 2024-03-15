@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Pacifico&display=swap');
+body {
+    font-family: 'Mulish', sans-serif;
+    margin:0;
+}
+
+h1 {
+    color: #fff;
+    background-color: #B31B68;
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 6rem;
+    font-size: 1.5em;
+}
+
+figure {
+    background-color: #91C5CC;
+    padding: 2rem;
+    text-align: center;
+    color: #B31B68;
+}
+
+figure img {
+    transform: scale(2);
+}
+
+Footer {
+    background-color: #91C5CC;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2.5rem;
+}

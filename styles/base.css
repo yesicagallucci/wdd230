@@ -172,6 +172,14 @@ section p{
     font-weight: bolder;
 }
 
+figure {
+    text-align: center;
+}
+
+figure img {
+    transform: scale(1.5);
+}
+
 
 
 /*Footer*/
