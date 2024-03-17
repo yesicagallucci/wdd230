@@ -73,13 +73,19 @@
         <section class="weather">
             <h2>Weather in Caacupe</h2>
             <div class="weather-info">
-                <p class="w-condition">Clear &#x263C;</p>
-                <p>Temperature:<span id="temp"> 34 </span>°C</p>
-                <p>Wind Speed:<span id="speed"> 9 </span>Km/h</p>
-                <p>Wind Chill:<span id="chill"> N/A </span></p>              
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Temperature: <span id="temp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Feels Like: <span id="st"></span></p>
+                <p>Wind Speed: <span id="speed"></span></p>
+                <p>Wind Chill: <span id="chill"></span></p>    
+                <div id="forecast-section"> </div>       
 
             </div>
-            
+                        
         </section>
         <section class="members">
             <h2>Members</h2>
@@ -124,6 +130,11 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/lastmod.js"></script> 
     <script src="scripts/darkmode.js"></script> 
-    <script src="scripts/windchill.js"></script>  
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
+    <div id="popupBanner" class="popup-banner">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+    </div>  
 </body>
 </html>

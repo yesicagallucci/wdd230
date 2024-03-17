@@ -24,9 +24,10 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${(data.main.temp.toFixed(0))}&degC`;
+    currentTemp.innerHTML = `${(data.main.temp.toFixed(1))}&degC`;
     humidity.innerHTML = `${data.main.humidity}%`;
     feels.innerHTML = `${data.main.feels_like}&degC`;
+    windspeed.textContent = `${currentWeatherData.wind.speed} m/s`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);

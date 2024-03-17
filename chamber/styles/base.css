@@ -214,8 +214,9 @@ section h2{
 	
 }
 
-.windchill button{
-	margin-top: 20px;
+/*Weather*/
+.weather-info{
+	text-align: center;
 }
 
 /*CTA*/
@@ -226,6 +227,7 @@ section h2{
 	line-height: 1.5em;
 	margin: 2rem 0;
 	text-align: center;
+	padding: 0 1rem;
 	
 }
 
@@ -244,6 +246,32 @@ button{
     box-shadow: 2px 2px 5px #34568f;
 
 
+}
+
+/* Styles for the popup banner */
+.popup-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+	
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+	text-align: center;
+	font-weight: bold;
+	color: var(--primary-color);
+	font-size: 1.8em;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
 }
 
 /*Footer*/
