@@ -219,6 +219,11 @@ section h2{
 	text-align: center;
 }
 
+.weather-info img { 
+	transform: scale(1.5);
+}
+
+
 /*CTA*/
 .join-now {
 	align-items: center;
@@ -227,8 +232,7 @@ section h2{
 	line-height: 1.5em;
 	margin: 2rem 0;
 	text-align: center;
-	padding: 0 1rem;
-	
+	padding: 0 1rem;	
 }
 
 button{
@@ -244,8 +248,6 @@ button{
     font-family: 'Domine', serif;
     font-weight: bold;
     box-shadow: 2px 2px 5px #34568f;
-
-
 }
 
 /* Styles for the popup banner */
