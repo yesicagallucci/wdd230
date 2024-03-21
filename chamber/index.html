@@ -48,66 +48,48 @@
                             
             </div>
         </div>
-        
-        <section class="events">
-            <h2>Events</h2>
-            <div class="single-event">
-                <h3>Business Networking Mixer:</h3>
-                <p>Join us for an evening of networking and collaboration as we bring together entrepreneurs, professionals, and industry leaders from across Caacupé. Connect with like-minded individuals, exchange ideas, and explore potential partnerships that can drive your business forward.</p>
-                <p class="when"> Date: March 14th, 2PM Venue: O'Leary 2034</p>
-            </div>
-            <div class="single-event">
-                <h3>Caacupé Business Expo:</h3>
-                <p>Discover the diverse array of businesses that call Caacupé home at our annual Business Expo. From local artisans and boutique shops to multinational corporations, this event showcases the vibrancy and innovation of our city's economy. Join us to support local businesses, forge new partnerships, and celebrate the spirit of entrepreneurship.</p>
-                <p class="when">April 26th-27th, 7AM-5PM at the Caacupé Convention Center.</p>
-            </div>
-            <div class="single-event">
-                <h3>Small Business Workshop Series:</h3>
-                <p>Are you a small business owner looking to enhance your skills and expand your knowledge? Our workshop series offers practical insights, expert advice, and actionable strategies to help you navigate the challenges of entrepreneurship. From marketing techniques to financial management, these sessions are designed to empower you on your journey to success.</p>
-                <p class="when">Dates and topics to be announced soon.</p>
-            </div>           
-        </section>
+        <div class="grid">
+            <section class="events">
+                <h2>Events</h2>
+                <div class="single-event">
+                    <h3>Business Networking Mixer:</h3>
+                    <p>Join us for an evening of networking and collaboration as we bring together entrepreneurs, professionals, and industry leaders from across Caacupé. Connect with like-minded individuals, exchange ideas, and explore potential partnerships that can drive your business forward.</p>
+                    <p class="when"> Date: March 14th, 2PM Venue: O'Leary 2034</p>
+                </div>
+                <div class="single-event">
+                    <h3>Caacupé Business Expo:</h3>
+                    <p>Discover the diverse array of businesses that call Caacupé home at our annual Business Expo. From local artisans and boutique shops to multinational corporations, this event showcases the vibrancy and innovation of our city's economy. Join us to support local businesses, forge new partnerships, and celebrate the spirit of entrepreneurship.</p>
+                    <p class="when">April 26th-27th, 7AM-5PM at the Caacupé Convention Center.</p>
+                </div>
+                <div class="single-event">
+                    <h3>Small Business Workshop Series:</h3>
+                    <p>Are you a small business owner looking to enhance your skills and expand your knowledge? Our workshop series offers practical insights, expert advice, and actionable strategies to help you navigate the challenges of entrepreneurship. From marketing techniques to financial management, these sessions are designed to empower you on your journey to success.</p>
+                    <p class="when">Dates and topics to be announced soon.</p>
+                </div>           
+            </section>
+    
+            <section class="weather">
+                <h2>Weather in Caacupe</h2>
+                <div class="weather-info">
+                    <div id="current-section">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <p>Temperature: <span id="temp"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Feels Like: <span id="st"></span></p>
+                        <p>Wind Speed: <span id="speed"></span></p>
+                        <p>Wind Chill: <span id="chill"></span></p> 
+                    </div>                   
+                    <div id="forecast-section"></div>     
+                </div>                 
+            </section>
 
-        <section class="weather">
-            <h2>Weather in Caacupe</h2>
-            <div class="weather-info">
-                <div id="current-section">
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <p>Temperature: <span id="temp"></span></p>
-                    <p>Humidity: <span id="humidity"></span></p>
-                    <p>Feels Like: <span id="st"></span></p>
-                    <p>Wind Speed: <span id="speed"></span></p>
-                    <p>Wind Chill: <span id="chill"></span></p> 
-                </div>                   
-                <div id="forecast-section"></div>     
-            </div>                 
-        </section>
+        </div>
+        <h2>Spotlight</h2>
+        <div id="spotlight"></div>
 
-        <section class="members">
-            <h2>Members</h2>
-            <div class="partner">
-                <img src="images/empanadas.webp" alt="la casa de las empanadas logo" loading="lazy">
-                <h3>La Casa de las Empanadas</h3>
-                <p>Founded in 1995, La Casa de las Empanadas has been a cherished culinary destination for locals and tourists alike. Specializing in traditional Paraguayan empanadas made with the finest ingredients and time-honored recipes, our establishment has become synonymous with quality and authenticity. From savory beef and chicken fillings to vegetarian options bursting with flavor, there's something for everyone to enjoy. Visit us today and experience the taste of tradition!</p>
-                <button>Website</button>
-            </div>
-            <div class="partner">
-                <img src="images/green.webp" alt="green thumb nursery logo" loading="lazy">
-                <h3>Green Thumb Nursery</h3>
-                <p>Since 2002, Green Thumb Nursery has been the go-to destination for all your gardening needs. With a vast selection of plants, flowers, and gardening supplies, we're committed to helping you create the garden of your dreams. Our knowledgeable staff is always on hand to offer expert advice and assistance, ensuring that your gardening journey is both enjoyable and successful. Whether you're a seasoned gardener or a novice enthusiast, we welcome you to explore our green oasis and let your creativity bloom!</p>
-                <button>Website</button>
-            </div>
-            <div class="partner">
-                <img src="images/tech.webp" alt="tech innovations logo" loading="lazy">
-                <h3>Tech Innovations</h3>
-                <p>As a leading provider of technological solutions, Tech Innovations is dedicated to driving innovation and efficiency across industries. From software development and IT consulting to cybersecurity and cloud computing, our team of experts offers comprehensive services tailored to the unique needs of each client. Whether you're a small startup or a large corporation, we have the tools and expertise to help you thrive in today's digital landscape. Partner with us and unlock the full potential of technology for your business.</p>
-                <button>Website</button>
-            </div>       
-
-        </section>
         <div class="join-now">
             <p>Join the Caacupé Chamber of Commerce today and become part of a thriving community dedicated to driving economic growth and prosperity. Together, we can build a brighter future for Caacupé and beyond.</p>
             <button class="cta" onclick = "window.location.href='join.html'">Join Us</button>  
@@ -129,6 +111,7 @@
     <script src="scripts/darkmode.js"></script> 
     <script src="scripts/windchill.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
     <div id="popupBanner" class="popup-banner">
         <span class="close-btn" id="closeBtn">&times;</span>
         <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>

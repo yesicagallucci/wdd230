@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	
 	.navigation {
 		display: flex;
@@ -14,51 +14,21 @@
 	#menu {
 		display: none;
 	}
-	
-	.herolabel{
-		position: absolute;
-		width: 100%;
-		height: 9rem;
-		background-color: hsla(218, 47%, 38%, 0.8);
-		top: 38rem;
-	}	
-
-	/*DISCOVER PAGE*/
-	.discover-main{
+	.grid {
 		display: grid;
-		grid-template-columns: 1fr auto;
-		grid-auto-rows: auto 1fr;
-		gap: 0.5rem;		
-	}
-	
-    .discover-cards {
-		grid-column: 1/2;
-		box-sizing: border-box;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		align-items: start;
+		gap: 1rem;
 	}
 
-	.discover-gallery div{
-		grid-column: 2/3;
-	}
-	.discover-gallery img:hover{
-		box-shadow: 0px 1px 58px 0px rgba(52,86,143,1);
-
-	}
-	/*JOIN FORM*/
-    .join {
-	    display: grid;
-	    grid-template-columns: 1fr 1fr;
-	    grid-auto-rows: 1fr;
-	    gap: 2rem;
-    }
-    .mlevel .level{
-	    grid-column: 2/3;
-    }
-	.members {
+	#spotlight {
 		display: flex;
 		flex-direction: row;
 	}
-
+	.discover-gallery img:hover{
+		box-shadow: 0px 1px 58px 0px rgba(52,86,143,1);
+	}
 	
 
-	
+
 }

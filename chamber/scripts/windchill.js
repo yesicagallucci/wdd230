@@ -113,8 +113,8 @@ async function fetchForecastWeather() {
             iconElement.src = `https://openweathermap.org/img/wn/${forecastByDate[date].icon}.png`; // Weather icon URL
             iconElement.alt = forecastByDate[date].description;           
             descriptionElement.textContent = forecastByDate[date].description;         
-            tempElement.textContent = `Temperature: ${forecastByDate[date].temp}°C`;           
-            humidityElement.textContent = `Humidity: ${forecastByDate[date].humidity}%`;
+            tempElement.textContent = `Temperature ${forecastByDate[date].temp}°C`;           
+            humidityElement.textContent = `Humidity ${forecastByDate[date].humidity}%`;
            
             forecastElement.appendChild(dayElement);
             forecastElement.appendChild(iconElement);

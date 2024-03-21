@@ -36,99 +36,105 @@
         🕶️
     </div>
     <main class="join">
-        <form method="get" action="thankyou.html" class="join-form">
-            <fieldset>
-                <legend>Personal and Business Information</legend>
-                <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label>Title or Position* <input type="text" name="position" id="position" pattern="[A-Za-z0-9- ]{7}" required></label>
-                <label>Email* <input type="email" name="email" id="email" placeholder="yourname@server.com" required></label>
-                <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required></label>
-                <label>Business / Organization Name* <input type="text" name="business" id="business" required></label>                
-            </fieldset>
-            <fieldset>
-                <legend>Choose a Membership</legend>           
-                <div class="radio">
-                    <label><input type="radio" name="levels" class="levels" value="np"> NP Membership</label>
-                    <label><input type="radio" name="levels" class="levels" value="bronze"> Bronze Membership</label>
-                    <label><input type="radio" name="levels" class="levels" value="silver"> Silver Membership</label>
-                    <label><input type="radio" name="levels" class="levels" value="gold"> Gold Membership</label>
-                </div>                
-                <div class="textarea">
-                    <label for="description">Tell Us About Your Business</label>
-                    <textarea id="description" name="description"></textarea>
-                </div>
-
-                <input type="hidden" name="date" id="date">                
-            </fieldset>
-           
-            <input type="hidden" name="date" id="id">
-            <input type="submit" value="Join The Chamber">
-        </form>
-        <div id="mlevels">
-            <div class="level">
-                <h2>NP Membership</h2>
-                <p>
-                   This membership level is tailored for non-profit organizations dedicated to serving the community.<br>
-                   Benefits:<br></p>
-                  <ul>
-                      <li>Access to networking events and seminars tailored for non-profit organizations.</li>
-                      <li>Listing in the chamber's directory specifically highlighting non-profit members.</li>
-                      <li>Opportunity to participate in community service projects organized by the chamber.</li>
-                      <li>Quarterly newsletter featuring updates on non-profit initiatives and success stories.</li>
-                      <li>Recognition on the chamber's website as a valued non-profit member.</li>
-                   </ul>
+        <div class="grid">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Personal and Business Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position* <input type="text" name="position" id="position" pattern="[A-Za-z0-9- ]{7}" required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="yourname@server.com" required></label>
+                    <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                    <label>Business / Organization Name* <input type="text" name="business" id="business" required></label>                
+                </fieldset>
+                <fieldset>
+                    <legend>Choose a Membership</legend>           
+                    <div class="radio">
+                        <label><input type="radio" name="levels" class="levels" value="np"> NP Membership</label>
+                        <label><input type="radio" name="levels" class="levels" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="levels" class="levels" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="levels" class="levels" value="gold"> Gold Membership</label>
+                    </div>                
+                    <div class="textarea">
+                        <label for="description">Tell Us About Your Business</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+    
+                    <input type="hidden" name="date" id="date">                
+                </fieldset>
                
+                <input type="hidden" name="date" id="id">
+                <input type="submit" value="Join The Chamber">
+            </form>
 
-                <p class="price">$0</p>
+            <section id="mlevels">
+                <div class="level">
+                    <h2>NP Membership</h2>
+                    <p>
+                       This membership level is tailored for non-profit organizations dedicated to serving the community.<br>
+                       Benefits:<br></p>
+                      <ul>
+                          <li>Access to networking events and seminars tailored for non-profit organizations.</li>
+                          <li>Listing in the chamber's directory specifically highlighting non-profit members.</li>
+                          <li>Opportunity to participate in community service projects organized by the chamber.</li>
+                          <li>Quarterly newsletter featuring updates on non-profit initiatives and success stories.</li>
+                          <li>Recognition on the chamber's website as a valued non-profit member.</li>
+                       </ul>
+                   
+    
+                    <span class="price">$0</span>
+    
+                </div>
+                <div class="level">
+                    <h2>Bronze Membership</h2>
+                    <p>The Bronze Membership is ideal for small businesses looking to establish their presence in the local business community.<br>
+                        Benefits:<br></p>
+                        <ul>
+                            <li>Invitation to monthly networking events to connect with other members and potential clients.</li>
+                            <li>Basic listing in the chamber's online directory.</li>
+                            <li>Access to discounted rates for chamber-sponsored workshops and educational programs.</li>
+                            <li>Member-exclusive resources and guides to help grow your business.</li>
+                            <li>Social media shout-outs and mentions highlighting your business achievements.</li>
+                        </ul>
+                    
+                    <span class="price">$500 per year</span>
+    
+                </div>
+                <div class="level">
+                    <h2>Silver Membership</h2>
+                    <p>The Silver Membership offers enhanced benefits for businesses seeking additional exposure and networking opportunities.<br>
+                        Benefits:<br></p>
+                        <ul>
+                            <li>Priority placement in the chamber's online directory for increased visibility.</li>
+                            <li>Complimentary admission to select premium networking events and industry-specific workshops.</li>
+                            <li>Access to exclusive member-only webinars hosted by industry experts.</li>
+                            <li>Opportunity to feature articles or blog posts on the chamber's website to showcase expertise.</li>
+                            <li>Recognition plaque or certificate commemorating your Silver Membership status.</li>
+                        </ul>
+                    
+                    <span class="price">$1000 per year</span>
+    
+                </div>
+                <div class="level">
+                    <h2>Gold Membership</h2>
+                    <p>TThe Gold Membership is designed for established businesses aiming to maximize their chamber involvement and brand recognition.<br>
+                        Benefits:<br></p>
+                        <ul>
+                            <li>Premier listing and featured profile in the chamber's online directory, ensuring top visibility.</li>
+                            <li>VIP access to all chamber events, including exclusive meet-and-greet sessions with guest speakers and dignitaries.</li>
+                            <li>Complimentary registration for all workshops, seminars, and conferences organized by the chamber.</li>
+                            <li>Dedicated account manager for personalized assistance and support with chamber-related inquiries.</li>
+                            <li>Customized marketing opportunities, such as sponsored content in chamber communications and event programs.</li>
+                        </ul>
+                    
+                    <span class="price">$1500 per year</span>
+    
+                </div>
+            </section>
 
-            </div>
-            <div class="level">
-                <h2>Bronze Membership</h2>
-                <p>The Bronze Membership is ideal for small businesses looking to establish their presence in the local business community.<br>
-                    Benefits:<br></p>
-                    <ul>
-                        <li>Invitation to monthly networking events to connect with other members and potential clients.</li>
-                        <li>Basic listing in the chamber's online directory.</li>
-                        <li>Access to discounted rates for chamber-sponsored workshops and educational programs.</li>
-                        <li>Member-exclusive resources and guides to help grow your business.</li>
-                        <li>Social media shout-outs and mentions highlighting your business achievements.</li>
-                    </ul>
-                
-                <p class="price">$500 per year</p>
-
-            </div>
-            <div class="level">
-                <h2>Silver Membership</h2>
-                <p>The Silver Membership offers enhanced benefits for businesses seeking additional exposure and networking opportunities.<br>
-                    Benefits:<br></p>
-                    <ul>
-                        <li>Priority placement in the chamber's online directory for increased visibility.</li>
-                        <li>Complimentary admission to select premium networking events and industry-specific workshops.</li>
-                        <li>Access to exclusive member-only webinars hosted by industry experts.</li>
-                        <li>Opportunity to feature articles or blog posts on the chamber's website to showcase expertise.</li>
-                        <li>Recognition plaque or certificate commemorating your Silver Membership status.</li>
-                    </ul>
-                
-                <p class="price">$1000 per year</p>
-
-            </div>
-            <div class="level">
-                <h2>Gold Membership</h2>
-                <p>TThe Gold Membership is designed for established businesses aiming to maximize their chamber involvement and brand recognition.<br>
-                    Benefits:<br></p>
-                    <ul>
-                        <li>Premier listing and featured profile in the chamber's online directory, ensuring top visibility.</li>
-                        <li>VIP access to all chamber events, including exclusive meet-and-greet sessions with guest speakers and dignitaries.</li>
-                        <li>Complimentary registration for all workshops, seminars, and conferences organized by the chamber.</li>
-                        <li>Dedicated account manager for personalized assistance and support with chamber-related inquiries.</li>
-                        <li>Customized marketing opportunities, such as sponsored content in chamber communications and event programs.</li>
-                    </ul>
-                
-                <p class="price">$1500 per year</p>
-
-            </div>
         </div>
+        
+        
 
 
     </main>

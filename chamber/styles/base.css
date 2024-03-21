@@ -4,36 +4,42 @@
 	--primary-color:#34568f;
 	--secondary-color:#fff;
 	--font-family: 'Domine', serif;
-	
 }
-html {
-	height: 100%;
-  }
-  body {
-	min-height: 100%;
-  }
 
 body{
-    background-color: white;
     margin: 0;
     padding: 0;
 	font-family:'open sans', sans-serif;
+	line-height: 1.5em;
+}
 
+h2 {
+	text-align: center;
+	font-family: var(--font-family);
+	color: var(--primary-color);
+	font-size: 1.5em;
+	padding: 2rem;
 }
 
 /*Header*/
 header{
-    background: var(--secondary-color);
     display: flex;
     justify-content: center;
     padding: 20px 0;
     align-items: center;
-	margin-bottom: 0;
+	margin: 0;
+	
 }
 
 header img{
     max-width: 100px;    
     height: auto;
+    height: auto;
+    padding-right: 10px;
+    border-radius: 50%;
+    
+       
+    height: auto;       
     padding-right: 10px;
     border-radius: 50%;
     
@@ -55,7 +61,7 @@ nav {
 	margin: 1rem auto;
 	padding: 0;
 	margin-top: 0;
-	
+	background-color: var(--primary-color);	
 }
 
 /* Mobile View ***************/
@@ -99,9 +105,7 @@ nav {
 	background-color: var(--secondary-color);
 }
 
-nav ul li{
-	line-height: 2.5rem;
-}
+
 
 .show li {
 	display: block;
@@ -128,12 +132,14 @@ nav ul li{
 }
 
 
+
+
 /*Hero*/
 main { 
-	margin: 0 auto;
-	
-	
+	margin: 0 auto;	
 }
+
+
 
 .hero{
 	width: 100%;
@@ -145,18 +151,22 @@ main {
 	height: auto;
 	object-fit: cover;
 	margin-top: 0;
+	margin: 0 auto;	
 }
+
 .herolabel{
 	position: absolute;
+	bottom: 0;
 	width: 100%;
 	height: 8rem;
 	background-color: hsla(218, 47%, 38%, 0.8);
-	top: 10rem;
+	
 }
 .herolabel h2{
 	color: var(--secondary-color);
 	font-family: var(--font-family);
 	text-align: center;
+	padding: 0.2rem;
 }
 .herolabel button{
     padding: 1rem;
@@ -167,51 +177,21 @@ main {
     box-shadow: 2px 2px 5px #fff;
     font-weight: bold;
     margin-top: 1rem;
+	padding-bottom: 10px;
 }
 
 
 /*Sections*/
+
 .events, .weather {
-	grid-row: 2/3;
-	border: 1px solid #34568f;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2rem;
     padding: 2rem;
-	margin-bottom: 0;
-	padding-bottom: 0;
 }
 
-.events p {
-	line-height: 1.5em;
-}
 .when {
 	color: #34568f;
 	font-weight: bold;
-}
-.members img{
-	transform: scale(0.6);
-}
-
-.members .partner {
-	margin: 2rem;
-}
-
-.members h2 {
-	margin: 2rem;
-}
-.members button {
-	color: var(--secondary-color);
-	background-color: var(--primary-color);
-	box-shadow: none;
-}
-
-.partners {
-	border: 1px solid var(--primary-color);
-}
-
-section h2{
-    font-family: 'Domine', serif;
-    color: #34568f;
-	
 }
 
 /*Weather*/
@@ -223,6 +203,31 @@ section h2{
 	transform: scale(1.5);
 }
 
+#forecast-section {
+	display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+	
+}
+.forecast-day {
+	display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px; 
+    margin: 10px 0; 
+	border-top: 2px solid #34568f;
+	padding: 1rem;
+}
+#spotlight {
+	
+}
+
+#spotlight .member {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 0 auto;
+}
+
 
 /*CTA*/
 .join-now {
@@ -230,9 +235,13 @@ section h2{
 }
 .join-now p {
 	line-height: 1.5em;
-	margin: 2rem 0;
-	text-align: center;
-	padding: 0 1rem;	
+	width:70%;
+    text-align:center;
+    margin: auto;
+	padding: 2rem;
+	margin-top: 2rem;
+	font-size: 1.2em;
+		
 }
 
 button{
@@ -294,41 +303,34 @@ footer ul{
 }
 
 /*DISCOVER PAGE*/
-h1{
-	font-family: domine, serif;
-	color: #34568f;
-	text-align: center;
-	display: block;
-}
-
-.discover-main div{
-	border: 1px solid #34568f;
+.discover-main div {
 	padding: 1rem;
 	margin: 1rem;
 }
-/*.discover-gallery{
-	height: auto;
-}*/
-.discover-gallery img{
-	object-fit: cover;
-    width: 100%;
-	overflow: auto;	
+.discover-cards  div {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 1rem;
+	padding: 1rem;
+	
 }
-.discover-gallery h2{
-	text-align: center;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
+.discover-gallery {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .discover-gallery p{
 	font-size: 1.2rem;
 }
-.discover-cards h2{
-	padding-bottom: 1rem;
+.discover-gallery img{
+	object-fit: cover;
+    width: 100%;	
+	overflow: auto;	
+}
+
+.discover-cards p{
+	padding: 1rem;
+	text-align: left;
 
 }
-.discover-cards p{
-	padding-bottom: 1rem;
-}
+
 /*jOIN FORM*/
 
 .join {
@@ -398,27 +400,29 @@ textarea {
 /*Membership levels boxes*/
 
 .level{
-	border: 1px solid var(--primary-color);
-	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 2rem;
 	grid-column: 1/2;
-	width: 400px;
-	margin-top: 20px;
-
-	
-}
-.level h2, .price {
-	font-family: var(--font-family);
-	color: var(--primary-color);
-	
+	width: auto;
+	margin: 3rem;
 }
 
 .level p, ul {
     line-height: 1.5em;
+	list-style:square;
+	text-align: left;
 }
 
 .price {
 	text-align: center;
 	font-size: 1.3em;
+	color: var(--primary-color);
+	font-weight: bold;
+	font-family: var(--font-family);	
+}
+
+li::marker {
+	color: var(--primary-color);
 }
 
 .thankyou{
@@ -549,6 +553,4 @@ a {
 	color: var(--primary-color);
 }
 
-.member ul img {
-	
-}
+
