@@ -199,23 +199,12 @@ main {
 	text-align: center;
 }
 
-.weather-info img { 
-	transform: scale(1.5);
-}
-
-#forecast-section {
-	display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-	
-}
 .forecast-day {
 	display: grid; 
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 10px; 
     margin: 10px 0; 
 	border-top: 2px solid #34568f;
-	padding: 1rem;
+	padding: 1rem 0;
 }
 
 #spotlight .member {

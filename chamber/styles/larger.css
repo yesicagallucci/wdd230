@@ -24,7 +24,9 @@
 		align-items: start;
 		gap: 1rem;
 	}
-
+	.weather-info img { 
+		transform: scale(1.5);
+	}
 	#spotlight {
 		display: flex;
 		flex-direction: row;
