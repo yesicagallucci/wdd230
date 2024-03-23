@@ -37,9 +37,11 @@ const displaySpotlight = (companies) => {
         logo.setAttribute('alt', `logo of ${company.name}`);
         logo.setAttribute('loading', 'lazy');
         brand.textContent = `${company.name}`;
+        brand.setAttribute('class', 'brand');
         url.textContent = `Website`;
         url.setAttribute('href', company.website);
         url.setAttribute('target', '_blank');
+        url.setAttribute('class', "website");
 
         member.appendChild(logo);
         member.appendChild(brand);

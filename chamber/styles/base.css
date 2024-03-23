@@ -19,6 +19,8 @@ h2 {
 	color: var(--primary-color);
 	font-size: 1.5em;
 	padding: 2rem;
+	
+    
 }
 
 /*Header*/
@@ -28,22 +30,14 @@ header{
     padding: 20px 0;
     align-items: center;
 	margin: 0;
-	
 }
 
 header img{
     max-width: 100px;    
     height: auto;
-    height: auto;
     padding-right: 10px;
     border-radius: 50%;
-    
-       
-    height: auto;       
-    padding-right: 10px;
-    border-radius: 50%;
-    
-       
+     
 }
 
 header h1{
@@ -53,7 +47,6 @@ header h1{
     align-items: center;
     padding-left: 10px; 
 	margin: 2rem;
-    
 }
 
 nav {
@@ -100,12 +93,12 @@ nav {
 	font-size: 1.2em;
 }
 
-.navigation li a:hover, navigation a:active {
-	color: var(--primary-color);
-	background-color: var(--secondary-color);
+.active::before {
+	content: "|";  /* just a wayfinding symbol for the user */
 }
-
-
+.active::after {
+	content: "|";  /* just a wayfinding symbol for the user */
+}
 
 .show li {
 	display: block;
@@ -120,6 +113,15 @@ nav {
 .open a {
 	display: block;
 }
+
+.navigation li a.active {
+	text-decoration: underline;
+	text-decoration: solid;
+	text-decoration-thickness: 5px;
+	text-decoration-color: #fff;
+}
+
+
 /*Dark mode toggle switch*/
 
 #mode {
@@ -131,14 +133,10 @@ nav {
 	font-size: 2rem;
 }
 
-
-
-
 /*Hero*/
 main { 
 	margin: 0 auto;	
 }
-
 
 
 .hero{
@@ -167,6 +165,7 @@ main {
 	font-family: var(--font-family);
 	text-align: center;
 	padding: 0.2rem;
+	
 }
 .herolabel button{
     padding: 1rem;
@@ -192,6 +191,7 @@ main {
 .when {
 	color: #34568f;
 	font-weight: bold;
+	background-color: #fff;
 }
 
 /*Weather*/
@@ -217,15 +217,13 @@ main {
 	border-top: 2px solid #34568f;
 	padding: 1rem;
 }
-#spotlight {
-	
-}
 
 #spotlight .member {
 	display: flex;
 	flex-direction: column;
 	width: 300px;
 	margin: 0 auto;
+	background-color: #fff;
 }
 
 
@@ -288,18 +286,39 @@ button{
 /*Footer*/
 
 footer{
-    grid-column: 1/13;
     padding: 2.5rem;
     margin: 0;
     background-color: #34568f;
     color: #fff;
-    text-align: center;
-    text-decoration: none;
-   
+	
+}
+
+.chamber-footer {
+	text-align: center;
+	justify-content: center;
+}
+
+.general-footer{
+	text-align: center;
+	justify-content: center;
 }
 
 footer ul{
 	list-style: none;
+}
+
+.general-footer  ul{
+	text-align: center;
+	justify-content: center;
+}
+
+.general-footer p {
+	text-align: center;
+	justify-content: center;
+}
+
+.sm-icons img {
+	padding: .5rem;
 }
 
 /*DISCOVER PAGE*/
@@ -495,6 +514,8 @@ a {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	height: 350px;
 	line-height: 1.5em;
+	background-color: #fff;
+	color: #34568f;
 	
 }
 

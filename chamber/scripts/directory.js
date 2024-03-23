@@ -29,6 +29,7 @@ const displayMembers = (companies) => {
         logo.setAttribute('class', 'member-logo');
         logo.setAttribute('loading', 'lazy');
         brand.textContent = `${company.name}`;
+        brand.setAttribute('class', 'brand');
         list.setAttribute('class', 'info');
         listItem1.textContent = `${company.address}`;
         listItem2.textContent = `${company.phone}`;
@@ -36,6 +37,7 @@ const displayMembers = (companies) => {
         url.textContent = 'Website';
         url.setAttribute('href', company.website);
         url.setAttribute('target', '_blank');
+        url.setAttribute('class', "website");
 
         //append (adjuntar) each parent with its child element
         card.appendChild(logo);

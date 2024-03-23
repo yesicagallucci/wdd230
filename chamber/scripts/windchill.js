@@ -31,11 +31,23 @@ function displayCurrentWeather(data) {
     humidity.innerHTML = `${data.main.humidity}%`;
     feels.innerHTML = `${data.main.feels_like}&degC`;
     wSpeed.innerHTML = `${data.wind.speed} m/s`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    let figure = document.createElement('figure');
+    let icon = document.createElement('img');
+    let description = document.createElement('figcaption');
+    
+    icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    icon.alt = `weather descriptive icon`;
+    description.textContent = data.weather[0].description;
+
+    figure.appendChild(icon);
+    figure.appendChild(description);
+    document.getElementById('fig-container').appendChild(figure);
+
+   /* const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    captionDesc.textContent = desc;*/
 }
 
 
