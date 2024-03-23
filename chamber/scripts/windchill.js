@@ -15,7 +15,7 @@ async function fetchCurrentWeather() {
        const response = await fetch(currentUrl);
        if (response.ok) {
            const data = await response.json();
-           console.log(data); // Log the data to inspect its structure
+           //console.log(data); // Log the data to inspect its structure
            displayCurrentWeather(data);
            
        } else {
@@ -58,7 +58,7 @@ async function fetchForecastWeather() {
         const response = await fetch(forecastUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // Log the data to inspect its structure
+            //console.log(data); // Log the data to inspect its structure
             displayForecastWeather(data);
         } else {
             throw new Error('Failed to fetch weather data');
