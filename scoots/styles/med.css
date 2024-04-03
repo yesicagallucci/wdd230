@@ -1,0 +1,47 @@
+@media (min-width:600px) {
+    .navigation {
+        display: flex;
+        margin: 0;
+    }
+    .navigation li {
+        display: block;
+        flex:  1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+        margin: 0;
+    }
+    .navigation li a:hover {
+        background-color: #83d9e8;
+    }
+    #menu {
+        display: none;
+    }
+    .scoots-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .scoots-info {
+        margin-left: 1rem;
+    }
+    .class-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .herolabel button:hover {
+        background-color: #83d9e8;
+    }
+    
+   
+    
+   
+}

@@ -1,0 +1,40 @@
+@media (min-width:1000px) {
+    .navigation {
+        display: flex;
+        margin: 0;
+    }
+    .navigation li {
+        display: block;
+        flex:  1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+        margin: 0;
+    }
+    .navigation li a:hover {
+        background-color: #83d9e8;
+    }
+    #menu {
+        display: none;
+    }
+    header h1 {
+        font-size: 6em;
+    }
+    header img {
+        transform: scale(1);
+    }
+    .herolabel {
+        height: 18rem;
+    }
+    .herolabel h2 {
+        font-size: 3.5em;
+    }
+    .herolabel p {
+        font-size: 1.7em;
+    }
+    .herolabel button {
+        font-size: 1.5em;
+    }
+   
+    
+} 
