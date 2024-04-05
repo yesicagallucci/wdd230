@@ -40,8 +40,38 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 /*TABLE FOR RENTAL PRICING AND FETCHING JSON*/
 
 const table = document.querySelector('#pricing tbody');
-const url = 
+const url = "https://yesicagallucci.github.io/wdd230/scoots/data/prices.json";
+
 
 async function getPricesData(){
-    const response = await fetch
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data);
+            displayPrices(data.prices);
+        }else {
+            throw new Error('Failed to fetch prices');
+        }
+    } catch (error) {
+        console.log('error fetching prices:', error);
+    }    
 }
+
+const displayPrices = (prices) => {
+    prices.forEach((price) =>{
+        let row = document.createElement('tr');
+        let type = document.createElement('td');
+        let max = document.createElement('td');
+        let rHalfDay = document.createElement('td');
+        let rFullDay = document.createElement('td');
+        let wHalfDay = document.createElement('td');
+        let wFullDay = document.createElement('td');
+        
+        type.textContent = `${price.}`
+
+    })
+
+}
+
+getPricesData();

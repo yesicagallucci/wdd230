@@ -1,106 +1,106 @@
 {
     "prices": [
         {
-            "rental type":"Honda Metro Scooter",
-            "max. persons":"1",
-            "resevation":[
+            "rentaltype":"Honda Metro Scooter",
+            "max-persons":"1",
+            "reservation":[
                 {
-                    "half day":"20",
-                    "full day":"30"
+                    "halfday":"20",
+                    "fullday":"30"
                 }
             ],
             "walk-in":[
                 {
-                    "half day":"25",
-                    "full day":"35"
+                    "halfday":"25",
+                    "fullday":"35"
                 }
                
             ]
         },
         {
-            "rental type":"Honda Dio Scooter",
-            "max. persons":"2",
-            "resevation":[
+            "rentaltype":"Honda Dio Scooter",
+            "max-persons":"2",
+            "reservation":[
                 {
-                    "half day":"30",
-                    "full day":"40"
+                    "halfday":"30",
+                    "fullday":"40"
                 }
             ],
             "walk-in":[
                 {
-                    "half day":"35",
-                    "full day":"45"
-                }
-               
-            ]
-
-        },
-        {
-            "rental type":"Honda PCX150 Scooter",
-            "max. persons":"2",
-            "resevation":[
-                {
-                    "half day":"40",
-                    "full day":"50"
-                }
-            ],
-            "walk-in":[
-                {
-                    "half day":"45",
-                    "full day":"55"
+                    "halfday":"35",
+                    "fullday":"45"
                 }
                
             ]
 
         },
         {
-            "rental type":"Honda Pioneer ATV",
-            "max. persons":"4",
-            "resevation":[
+            "rentaltype":"Honda PCX150 Scooter",
+            "max-persons":"2",
+            "reservation":[
                 {
-                    "half day":"50",
-                    "full day":"70"
+                    "halfday":"40",
+                    "fullday":"50"
                 }
             ],
             "walk-in":[
                 {
-                    "half day":"60",
-                    "full day":"80"
+                    "halfday":"45",
+                    "fullday":"55"
                 }
                
             ]
 
         },
         {
-            "rental type":"Jeep Wrangler - 4 door with a/c",
-            "max. persons":"5",
-            "resevation":[
+            "rentaltype":"Honda Pioneer ATV",
+            "max-persons":"4",
+            "reservation":[
                 {
-                    "half day":"70",
-                    "full day":"100"
+                    "halfday":"50",
+                    "fullday":"70"
                 }
             ],
             "walk-in":[
                 {
-                    "half day":"85",
-                    "full day":"125"
+                    "halfday":"60",
+                    "fullday":"80"
+                }
+               
+            ]
+
+        },
+        {
+            "rentaltype":"Jeep Wrangler - 4 door with a/c",
+            "max-persons":"5",
+            "reservation":[
+                {
+                    "halfday":"70",
+                    "fullday":"100"
+                }
+            ],
+            "walk-in":[
+                {
+                    "halfday":"85",
+                    "fullday":"125"
                 }
                
             ]  
         },
         {
-            "rental type":"Jeep Wrangler - 2 door",
-            "max. persons":"4",
-            "resevation":[
+            "rentaltype":"Jeep Wrangler - 2 door",
+            "max-persons":"4",
+            "reservation":[
                 {
-                    "half day":"60",
-                    "full day":"85"
+                    "halfday":"60",
+                    "fullday":"85"
                 }
             ],
             "walk-in":[
                 {
-                    "half day":"70",
-                    "full day":"90"
+                    "halfday":"70",
+                    "fullday":"90"
                 }
                
             ]
