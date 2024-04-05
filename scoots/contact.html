@@ -36,10 +36,78 @@
             <li><a class="active" href="#">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        
-        
-    </main>
+    <main class="contact">
+        <h2>Our Locations</h2>
+        <div class="shops"> 
+            <h3>Downtown Cozumel</h3>
+            <p>Av. Lic. Benito Juárez 900, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico. <br>Near Playa del Carmen-Cozumel Ferry Dock<br>Phone: +52 (987) 123-4567</p>
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/downtown-small.webp">
+                    <source media="(max-width: 600px)" srcset="images/downtown-medium.webp">
+                    <img src="images/downtown-large.webp" alt="shop on the beach with jeeps" loading="lazy">
+                </picture>            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7473.836958343013!2d-86.952607130002!3d20.50956784091272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCozumel%20ferry%20dock!5e0!3m2!1ses-419!2spy!4v1712200801578!5m2!1ses-419!2spy" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>                  
+        </div>
+
+        <div class="shops"> 
+            <h3>Terminal Puerta Maya</h3>
+            <p>Carretera Costera Sur Km 3.5, Terminal de Cruceros SSA México, 77600 San Miguel de Cozumel, Q.R., Mexico.<br> Phone: +52 (987) 567-8910</p>            
+            <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/cruise-small.webp">
+                    <source media="(max-width: 600px)" srcset="images/cruise-medium.webp">
+                    <img src="images/cruise-large.webp" alt="shop on the beach with scooters in the front" loading="lazy">
+                </picture>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1571.5271539374712!2d-86.97506557399997!3d20.475764841475602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCozumel%20puerta%20maya!5e0!3m2!1ses-419!2spy!4v1712200623972!5m2!1ses-419!2spy" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>            
+        </div>
+
+        <h2>Send Us an Email or DM</h2>
+        <div class="sm">
+            <div>
+                <h3>Our Email</h3>
+            </div>     
+            <div>
+                <img src="images/email.webp" alt="email icon" loading="lazy">
+                <p>info@scootsrentals.com</p>              
+            </div>
+           <div>
+              <h3>Our Social Media Handles</h3>
+           </div>           
+           <div>
+              <img src="images/instagram.webp" alt="Instagram icon" loading="lazy">
+              <p>Instagram: @scootsrentals</p>
+           </div>
+           <div>
+              <img src="images/facebook.webp" alt="facebook icon" loading="lazy">
+              <p>Facebook: Scoots-Cozumel</p>
+           </div>
+           <div>
+              <img src="images/youtube.webp" alt="youtube icon" loading="lazy">
+              <p>YouTube: @Scoots</p>            
+           </div>   
+        </div>  
+
+        <h2>Or Contact Us Here!</h2>
+        <div class="form">
+            <form method="get" action="thanks.html" class="contact-form">
+                <fieldset>
+                    <legend>Ask Us Anything</legend>
+                    <label>Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="yourname@emailprovider.com" required><span class="error-message"></span></label>
+                    <div class="textarea">
+                       <label for="comments">Comment:</label>
+                       <textarea id="comments" name="comments"></textarea>
+                    </div>
+                </fieldset>
+                
+                <input type="hidden" name="date" id="date">
+                <input type="submit" value="Send">
+            </form>
+        </div>           
+    </main> 
     <footer>
         <div class="scoots-footer">
             <div class="main-footer">

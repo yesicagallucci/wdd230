@@ -37,6 +37,11 @@ document.getElementById("lastModified").innerHTML = "Last modification: " + last
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+/*TABLE FOR RENTAL PRICING AND FETCHING JSON*/
 
+const table = document.querySelector('#pricing tbody');
+const url = 
 
-
+async function getPricesData(){
+    const response = await fetch
+}

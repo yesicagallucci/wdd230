@@ -35,6 +35,9 @@
     .herolabel button {
         font-size: 1.5em;
     }
-   
+    .antiherolabel p {
+        font-size: 4em;       
+    }
+    
     
 } 
