@@ -68,7 +68,12 @@ const displayPrices = (prices) => {
         let wHalfDay = document.createElement('td');
         let wFullDay = document.createElement('td');
         
-        type.textContent = `${price.}`
+        type.textContent = `${price.rentaltype}`;
+        max.textContent = `${price.max-persons}`;
+        rHalfDay = `${price.reservation.halfday}`;
+        rFullDay = `${price.reservation.fullday}`;
+        wHalfDay = `${price.walk-in.halfday}`;
+        wFullDay = `${price.walk-in.fullday}`;
 
     })
 
