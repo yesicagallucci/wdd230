@@ -69,13 +69,22 @@ const displayPrices = (prices) => {
         let wFullDay = document.createElement('td');
         
         type.textContent = `${price.rentaltype}`;
-        max.textContent = `${price.max-persons}`;
+        max.textContent = `${price.maxpersons}`;
         rHalfDay = `${price.reservation.halfday}`;
         rFullDay = `${price.reservation.fullday}`;
-        wHalfDay = `${price.walk-in.halfday}`;
-        wFullDay = `${price.walk-in.fullday}`;
+        wHalfDay = `${price.walkin.halfday}`;
+        wFullDay = `${price.walkin.fullday}`;
 
-    })
+        row.appendChild(type);
+        row.appendChild(max);
+        row.appendChild(rHalfDay);
+        row.appendChild(rFullDay);
+        row.appendChild(wHalfDay);
+        row.appendChild(wFullDay);
+
+        table.appendChild(row);
+
+    });
 
 }
 
