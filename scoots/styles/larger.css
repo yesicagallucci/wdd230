@@ -38,6 +38,26 @@
     .antiherolabel p {
         font-size: 4em;       
     }
+    .sm {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+    .showroom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+        gap: 1rem;        
+    }
+    .rental-type img {
+        margin: 0 auto;
+    }
+    thead:first-child {
+        font-size: 1.5em;
+    }
+    .home .showroom {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    }
     
-    
-} 
+}

@@ -70,10 +70,10 @@ const displayPrices = (prices) => {
         
         type.textContent = `${price.rentaltype}`;
         max.textContent = `${price.maxpersons}`;
-        rHalfDay = `${price.reservation.halfday}`;
-        rFullDay = `${price.reservation.fullday}`;
-        wHalfDay = `${price.walkin.halfday}`;
-        wFullDay = `${price.walkin.fullday}`;
+        rHalfDay.textContent = `$${price.reservation[0].halfday}`;
+        rFullDay.textContent = `$${price.reservation[0].fullday}`;
+        wHalfDay.textContent = `$${price.walkin[0].halfday}`;
+        wFullDay.textContent = `$${price.walkin[0].fullday}`;
 
         row.appendChild(type);
         row.appendChild(max);
@@ -89,3 +89,4 @@ const displayPrices = (prices) => {
 }
 
 getPricesData();
+

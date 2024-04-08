@@ -388,4 +388,90 @@ textarea {
 .shops div {
     text-align: center;
 }
- 
+
+/*RENTALS*/
+.rentals {
+    margin: 2.5rem;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+.rentals h2 {
+    font-family: var(--font-family);
+    font-size: 2em;   
+}
+.rental-type {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.showroom {
+    margin-bottom: 2rem;
+}
+.rental-type img {
+    max-width: 400px;
+    display: block;
+}
+.rental-type h3 {
+    font-family: var(--font-family);
+    font-size: 2em;
+}
+table {
+    border: 1px solid var(--primary-color);
+    font-size: .8em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+th, td {
+    border: 1px solid var(--primary-color);
+    padding: 8px 10px;
+}
+td:last-of-type {
+    text-align: center;
+}
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: var(--tertiary-color)
+}
+thead:first-child {
+    background-color: var(--tertiary-color);
+    font-family: var(--font-family);
+    font-size: 1em;
+}
+.home h2 {
+    color: var(--primary-color);
+    margin: 2.5rem;
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 2em;  
+}
+.home p {
+    color: var(--primary-color);
+    margin: 2.5rem;   
+}
+.home .showroom .rental-type {
+    transform: scale(.7);
+    margin: -3.5em;
+    padding: 0;
+    color: var(--primary-color);
+}
+.home .showroom {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+.home .showroom .rental-type img {
+    margin: 0 auto;
+}
+.home .showroom button {
+    margin: 0 auto;
+    text-align: center;
+}
+#banner {
+    background-color: var(--secondary-color);
+}
+  

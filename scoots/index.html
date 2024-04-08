@@ -18,6 +18,10 @@
 
 </head>
 <body>
+    <div id="banner">
+        <span class="close-btn" id="closeBtn">x</span>
+        </div id="max-temp"></div>
+    </div>
     <header>
         <img src="images/scoots-logo-header.webp" alt="scoots logo">
         <div>
@@ -36,7 +40,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="home">
         <div class="hero">
             <picture>
                 <source media="(max-width: 460px)" srcset="images/hero-small.webp">
@@ -49,13 +53,65 @@
                 <button onclick="window.location.href='reservations.html'">Reserve Yours Now</button>
             </div>
         </div>
-
-
-
         
+        <div class="welcome">
+            <h2>Welcome to Scoots!</h2>
+            <p>Your premier destination for scooter rentals in Cozumel! Our hassle-free rental process ensures you have the freedom to explore this beautiful island at your own pace. </p>
+        </div>
+        <h2>Browse our fleet</h2>
+        <div class="showroom">
+            <div class="rental-type">
+                <img src="images/metro.webp" alt="Honda Metro Scooter" loading="lazy">
+                <h3>Honda Metro Scooter</h3>
+            </div>
+            <div class="rental-type">
+                <img src="images/dio.webp" alt="Honda Dio Scooter" loading="lazy">
+                <h3>Honda Dio Scooter</h3>                
+            </div>
+            <div class="rental-type">
+                <img src="images/pcx150.webp" alt="Honda pcx150 scooter" loading="lazy">
+                <h3>Honda PCX150 Scooter</h3>
+            </div>
+            <div class="rental-type"> 
+                <img src="images/atv.webp" alt="honda Pioneer atv" loading="lazy">
+                <h3>Honda Pioneer ATV</h3>
+            </div>
+            <div class="rental-type">
+                <img src="images/wrangler-4door.webp" alt="jeep wrangler 4 door" loading="lazy">
+                <h3>Jeep Wrangler - 4 door</h3>
+            </div>
+            <div class="rental-type">
+                  <img src="images/wrangler-2door.webp" alt="jeep wrangler 2 door" loading="lazy">
+                  <h3>Jeep Wrangler - 2 door</h3>
+            </div>
+            <div>
+                <button onclick="window.location.href='rentals.html'">More about our vehicles</button>
+            </div>
+        </div>
+
+        <div class="process">
+           <h2>Hassle-free Rental Process</h2>
+           <p>Experience the ultimate convenience with our hassle-free rental process.<br><br> You can choose between picking up the scooter at our convenient location or having it delivered straight to your accommodation, airport, or cruise ship terminal. Upon receiving your scooter, our team will provide thorough instructions on operation and safety to ensure that you are ready for the road ahead. We offer flexible rental options, including half-day and full-day rates, so you can tailor your adventure to fit your schedule and budget.<br><br> You can cruise along Cozumel's scenic coastline, visit historic landmarks, or venture off the beaten path to discover hidden gems. When your journey comes to an end, simply return the scooter to our designated location or arrange for pickup at your convenience. Our transparent pricing ensures that there are no hidden fees, allowing you to focus on making the most of your time in Cozumel.<br><br>Reserve your scooter today and embark on an unforgettable exploration of this beautiful island!</p>
+           <div></div>
+        </div> 
+
+        <div class="Contact-us">
+            <h2>Get in Touch with Us</h2>
+            <p>Have a question about our scooter rentals or need assistance planning your Cozumel adventure? We're here to help! Reach out to us using the contact information below, and our friendly team will be happy to assist you. Whether you have inquiries about pricing, availability, or special requests, we're dedicated to providing you with exceptional service and support. Don't hesitate to get in touch—we can't wait to hear from you!</p>
+            <div></div>
+            <button onclick="window.location.href='contact.html'">Send Us a Message</button>
+
+        </div>
+
+        <div class="explore">
+            <h2>Explore Cozumel</h2>
+            <p>Embark on an unforgettable journey through the vibrant streets and breathtaking landscapes of Cozumel. Every turn in this enchanting island paradise unveils a new adventure waiting to be discovered. As you plan your exploration of this tropical paradise, it's essential to consider the weather conditions that will shape your experience.<br><br>Cozumel has a tropical climate, which means you can expect warm temperatures and abundant sunshine all year round. The average temperature ranges from mid-70s to low-90s Fahrenheit (mid-20s to low-30s Celsius), making it the perfect weather for outdoor activities such as snorkeling, diving, beachcombing, and scooter rides along the scenic coastline.</p>
+            <div id="weather"></div>
+        </div>   
+
         <div class="antihero">
             <div class="antiherolabel">
-                <p>Cozumel Awaits You</p>
+                <p>Cozumel Awaits You!</p>
             </div>
             <picture>
                 <source media="(max-width: 460px)" srcset="images/antihero-small.webp">
@@ -86,5 +142,6 @@
         </div>
     </footer>
     <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
