@@ -42,6 +42,9 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 const table = document.querySelector('#pricing tbody');
 const url = "https://yesicagallucci.github.io/wdd230/scoots/data/prices.json";
 
+document.addEventListener('DOMContentLoaded', function() {
+    getPricesData();
+});
 
 async function getPricesData(){
     try {
@@ -88,5 +91,5 @@ const displayPrices = (prices) => {
 
 }
 
-getPricesData();
+//getPricesData();
 

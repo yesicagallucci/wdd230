@@ -18,6 +18,9 @@
     #menu {
         display: none;
     }
+    .herolabel h2 {
+        font-size: 2.5em;
+    }
     .scoots-footer {
         display: flex;
         flex-direction: row;
@@ -42,6 +45,9 @@
         background-color: #83d9e8;
         transform: scale(1.3);
         transition: 1.5s;
+    }
+    .close-btn {
+        font-size: 1.5em;
     }
     
     

@@ -203,15 +203,14 @@ main {
     height: 10rem;
     text-align: left;
     top: 35%;
-    left: 2%
+    margin-right: 0;  
   
 }
 
 .antiherolabel p {
     font-family: var(--font-family);
     color: var(--primary-color);
-    font-size: 2em;
-   
+    font-size: 2em; 
 }
 
 /*FOOTER*/
@@ -434,7 +433,7 @@ td:last-of-type {
     text-align: center;
 }
   
-  tbody > tr:nth-of-type(even) {
+tbody > tr:nth-of-type(even) {
     background-color: var(--tertiary-color)
 }
 thead:first-child {
@@ -442,17 +441,7 @@ thead:first-child {
     font-family: var(--font-family);
     font-size: 1em;
 }
-.home h2 {
-    color: var(--primary-color);
-    margin: 2.5rem;
-    padding: 1rem;
-    font-family: var(--font-family);
-    font-size: 2em;  
-}
-.home p {
-    color: var(--primary-color);
-    margin: 2.5rem;   
-}
+/*HOME*/
 .home .showroom .rental-type {
     transform: scale(.7);
     margin: -3.5em;
@@ -467,11 +456,98 @@ thead:first-child {
 .home .showroom .rental-type img {
     margin: 0 auto;
 }
-.home .showroom button {
+.content {
+    margin: 2.5rem;
+    padding: 1rem;
+}
+
+.content h2 {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 2em;  
+}
+.content p {
+    color: var(--primary-color);
+    margin: 2.5rem;   
+}
+
+.sm a:link {
+    text-decoration: underline;
+    color: var(--primary-color);   
+}
+.sm a:visited {
+    color: var(--primary-color);
+}
+.sm a:hover {
+    color: var(--secondary-color);
+}    
+.explore-cozumel h3 {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 1.5em;  
+}
+
+.content button {
+    display: block;
+    background-color:var(--tertiary-color);
+    padding: 20px;
+    color: var(--primary-color);
     margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
     text-align: center;
+    
 }
-#banner {
+
+.content button:hover {
     background-color: var(--secondary-color);
+    transform: scale(1.3);
+    transition: 1s;
 }
-  
+
+#banner {
+    bottom: 0;
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: 1.5em;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 2em;
+}
+#weather, #forecast {
+    background-color: #83d9e8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: row;  
+    gap: 0;
+    max-width: fit-content;
+    min-width: min-content;
+    padding: 0;
+    justify-content: left;   
+}
+
+#weather figcaption {
+    display: inline;
+    align-items: center;
+    color:var(--primary-color);
+}
+
+#weather img {
+    transform: scale(1.5);
+}
+
+#weather p{
+    display: inline;
+    padding: 0;
+    margin: 1rem;
+}
