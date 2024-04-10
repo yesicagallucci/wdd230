@@ -7,14 +7,6 @@
     --font-family:"Leckerli One", cursive;
 }
 
-/* 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-*/
-
 body {
     margin: 0;
     padding: 0;
@@ -102,13 +94,6 @@ nav ul {
     display: block;
 }
 
-.navigation li a.active {
-	text-decoration: underline;
-	text-decoration: solid;
-	text-decoration-thickness: 5px;
-	text-decoration-color: var(--primary-color);
-}
-
 /*DARK MODE*/
 
 #mode {
@@ -160,7 +145,7 @@ main {
 .herolabel h2 {
     color: var(--primary-color);
     font-family: var(--font-family);
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
     padding: .5rem;
 }
@@ -168,13 +153,13 @@ main {
 .herolabel p {
     color: var(--primary-color);
     text-align: center;
-    font-size: .8;
+    font-size: .8em;
 }
 
 .herolabel button {
     padding: .5rem;
     font-weight: 700;
-    font-size: .6;
+    font-size: 1.2em;
     border-radius: 20px;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
@@ -433,14 +418,25 @@ td:last-of-type {
     text-align: center;
 }
   
-tbody > tr:nth-of-type(even) {
-    background-color: var(--tertiary-color)
-}
 thead:first-child {
     background-color: var(--tertiary-color);
     font-family: var(--font-family);
     font-size: 1em;
 }
+
+.prices button {
+    display: block;
+    background-color:var(--tertiary-color);
+    padding: 20px;
+    color: var(--primary-color);
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 /*HOME*/
 .home .showroom .rental-type {
     transform: scale(.7);
@@ -498,12 +494,6 @@ thead:first-child {
     font-weight: 600;
     text-align: center;
     
-}
-
-.content button:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.3);
-    transition: 1s;
 }
 
 #banner {
@@ -566,4 +556,15 @@ thead:first-child {
     display: inline;
     padding: 0;
     margin: 1rem;
+}
+.attributions {
+    margin: 2.5rem;
+    padding: 1.5rem;
+}
+.attributions h2 {
+    font-family: var(--font-family);
+    font-size: 2em;
+}
+.attributions a {
+    background-color: #fff;
 }

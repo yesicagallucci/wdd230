@@ -1,7 +1,7 @@
 
 /*TABLE FOR RENTAL PRICING AND FETCHING JSON*/
 
-const table = document.querySelector('#pricing');
+const table = document.querySelector('#pricing', 'tbody');
 const url = "https://yesicagallucci.github.io/wdd230/scoots/data/prices.json";
 
 document.addEventListener('DOMContentLoaded', function() {

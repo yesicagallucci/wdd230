@@ -12,19 +12,26 @@ hambutton.addEventListener('click', () => {
 
 const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
-//const header = document.querySelector("h1");
-//const titles = 
+const textElements = document.querySelectorAll("main");
 
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("🌆")) {
         body.style.background = "#000";
         body.style.color = "#fff";
+       
+        textElements.forEach(element => {
+            element.style.color = "#fff";
+        });      
 
         modeButton.textContent = "🌇";
 
     } else {
         body.style.background = "#fff";
-        body.style.color = "#000";
+        body.style.color = "#004000";
+        
+        textElements.forEach(element => {
+            element.style.color = "#004000"; 
+        });       
 
         modeButton.textContent = "🌆";
     }
@@ -36,3 +43,5 @@ let lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = "Last modification: " + lastModified;
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+/*HIDDEN DATE IN THE FORM*/

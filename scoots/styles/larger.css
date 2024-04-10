@@ -45,7 +45,6 @@
     .showroom {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3 1fr);
         gap: 1rem;        
     }
     .rental-type img {
@@ -57,7 +56,6 @@
     .home .showroom {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
     }
     
 }
