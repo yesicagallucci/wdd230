@@ -542,11 +542,27 @@ thead:first-child {
     color:var(--primary-color);
 }
 
+#forecast figcaption {
+    display: inline;
+    align-items: center;
+    color:var(--primary-color);
+}
+
 #weather img {
     transform: scale(1.5);
 }
 
+#forecast img {
+    transform: scale(1.5);
+}
+
 #weather p{
+    display: inline;
+    padding: 0;
+    margin: 1rem;
+}
+
+#forecast p{
     display: inline;
     padding: 0;
     margin: 1rem;
