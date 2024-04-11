@@ -3,7 +3,7 @@
 :root{
     --primary-color:#004000;
     --secondary-color:#83d9e8;
-    --tertiary-color:#cbb78a;
+    --tertiary-color:#dfc892;
     --font-family:"Leckerli One", cursive;
 }
 
@@ -103,6 +103,7 @@ nav ul {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+    color: var(--primary-color)
 }
 
 /*WAYFINDING*/
@@ -323,6 +324,12 @@ textarea {
     width: 300px;
 }
 
+.form a:link {
+    color: #2f104c;
+    font-weight: 700;
+
+}
+
 /*THANK YOU PAGES*/
 .thanks {
     padding: 3rem;
@@ -498,10 +505,10 @@ thead:first-child {
 
 #banner {
     bottom: 0;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     padding: 20px;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: var(--font-family);
     font-size: 1.5em;
 }
